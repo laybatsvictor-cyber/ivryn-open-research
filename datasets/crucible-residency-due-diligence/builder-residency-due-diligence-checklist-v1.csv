@@ -1,0 +1,27 @@
+id,category,criterion,rationale,evidence_prompt
+BRD-01,Operator,The legal or responsible operator is named.,A participant needs to know who accepts money and carries obligations.,"Record the operator name, registration or legal status and service address."
+BRD-02,Operator,A monitored contact and escalation route are provided.,Questions and urgent issues need more than a social profile.,Test the ordinary and urgent contact routes.
+BRD-03,Status,Application status and decision dates are current.,An open label can become misleading when dates have passed or a cohort has started.,"Capture the page, timestamp and stated decision timeline."
+BRD-04,Status,"Exact arrival, departure and program dates are stated.",Travel and accommodation decisions depend on unambiguous dates and time zones.,"Record dates, check-in windows and time zone."
+BRD-05,Venue,The city and venue status are confirmed.,A concept image or provisional city is not a confirmed accommodation booking.,Request the address or a documented disclosure of when it will be supplied.
+BRD-06,Venue,"Room allocation, occupancy and accessibility are described.","Shared-room assumptions materially affect fit, privacy and cost.","Record bed type, room sharing, bathrooms, stairs and accessibility constraints."
+BRD-07,Venue,Capacity and minimum viable cohort are disclosed.,A residency can change or cancel if too few or too many people join.,"Record maximum capacity, minimum cohort and the consequence if unmet."
+BRD-08,Money,"The total price, currency and taxes are stated.","A headline price may omit taxes, deposits or mandatory extras.",Request an itemized total in the payment currency.
+BRD-09,Money,Included and excluded services are itemized.,"Accommodation, food, transport, workspace and activities should not be inferred.",Create an inclusion and exclusion list.
+BRD-10,Money,"Payment recipient, schedule and method are verifiable.",The payee should match the responsible operator or a disclosed agent.,"Record invoice issuer, payee, due dates and payment protection."
+BRD-11,Money,"Cancellation, refund and organiser-cancellation terms are supplied before payment.",A participant needs to understand losses under each cancellation scenario.,Save the terms version accepted at payment.
+BRD-12,Travel,Visa and work-authorisation responsibility is explicit.,A residency invitation does not determine immigration or work rights.,Check current official authority guidance for the participant’s nationality and activity.
+BRD-13,Travel,Insurance expectations and exclusions are explicit.,"Travel, health, equipment and cancellation risks may require different cover.",Record required cover and who bears uninsured costs.
+BRD-14,Safety,Emergency contacts and evacuation procedures exist.,Shared accommodation in an unfamiliar place needs a practical incident plan.,"Request emergency numbers, exits, assembly point and hospital route."
+BRD-15,Safety,"Health, accessibility and accommodation needs have a private route.",Participants need a way to discuss needs without public disclosure.,Test the confidential request and response process.
+BRD-16,Community,"House rules cover guests, noise, substances and shared spaces.",Common expectations reduce avoidable conflict in a live-work house.,Review the cohort-specific house rules before acceptance.
+BRD-17,Community,"Conflict, harassment and removal procedures are defined.",A community promise needs a safe route for complaints and proportionate action.,"Record reporter options, decision owner and consequences."
+BRD-18,Privacy,Photography and public-content participation require separate agreement.,Joining a residency is not consent to marketing or documentary content.,Review release wording and the opt-out path.
+BRD-19,Privacy,Confidential projects and intellectual property remain under participant control.,Proximity should not force disclosure or transfer of project rights.,Review confidentiality and intellectual-property clauses.
+BRD-20,Work,The expected work rhythm and mandatory activities are stated.,A participant cannot assess fit without knowing the balance of focus and group time.,"Record mandatory sessions, quiet hours and uninterrupted blocks."
+BRD-21,Work,Each participant controls their project and milestone.,"Selection should not imply employment, investment or transfer of decision rights.",Review the agreement and milestone process.
+BRD-22,Selection,Selection criteria and conflicts of interest are described.,Applicants should understand what is assessed and whether sponsors influence selection.,"Record criteria, reviewers and material relationships."
+BRD-23,Claims,Testimonials identify the cohort and have publication permission.,A quote without context or consent cannot establish a repeatable outcome.,"Verify the speaker, cohort, approved wording and date."
+BRD-24,Claims,"Launch, revenue, funding and partnership claims link to a verifiable record.",Residency association should not be confused with causation or endorsement.,Request the public artifact and participant-approved attribution.
+BRD-25,Claims,"Outcomes state starting point, time horizon and limitations.","Without a baseline and timeframe, progress claims are easy to overread.","Record milestone, observed deliverable, later result and external factors."
+BRD-26,Decision,Unresolved questions are listed before payment or travel.,A visible open-questions list prevents enthusiasm from becoming assumed fact.,Publish or retain a dated decision log with owner and due date.

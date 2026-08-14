@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "study": "Cascads single-host publication contention study",
+  "generatedAt": "2026-08-14T00:45:42.999Z",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "durationMs": 4339,
+  "environment": {
+    "runtime": "v24.13.0",
+    "platform": "linux",
+    "architecture": "x64"
+  },
+  "implementation": {
+    "repositoryCommit": "582ac150398f27563f7eea30575fc5bb193a8364",
+    "sourcePath": "lib/publication-claims.js",
+    "sourceSha256": "26def4d026c9df1715e33ad9bc828261ec38daa60f44ef9d818253675ac043b5",
+    "sourceHasUncommittedChanges": true
+  },
+  "design": {
+    "rounds": 25,
+    "independentProcessesPerRound": 8,
+    "provider": "local deterministic stub",
+    "sharedState": "one JSON ledger protected by the implementation file lock",
+    "contestedKey": "one item and one platform per isolated round"
+  },
+  "totals": {
+    "attempts": 200,
+    "delivered": 25,
+    "blocked": 175,
+    "other": 0,
+    "providerCalls": 25,
+    "duplicateProviderCalls": 0
+  },
+  "result": {
+    "passed": true,
+    "invariant": "exactly one provider callback per round"
+  },
+  "limitations": [
+    "This is a controlled single-host process-contention study, not a production traffic sample.",
+    "The provider callback is a local deterministic stub and no social-network API was called.",
+    "The result does not test multi-host or distributed filesystems.",
+    "The study covers the shared X and YouTube claim module through the X branch only.",
+    "A passing run is evidence for this implementation and environment, not a universal guarantee."
+  ],
+  "rounds": [
+    {
+      "round": 1,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 2,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 3,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 4,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 5,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 6,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 7,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 8,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 9,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 10,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 11,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 12,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 13,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 14,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 15,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 16,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 17,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 18,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 19,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 20,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 21,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 22,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 23,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 24,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    },
+    {
+      "round": 25,
+      "attempts": 8,
+      "delivered": 1,
+      "blocked": 7,
+      "other": [],
+      "providerCalls": 1,
+      "duplicateProviderCalls": 0
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "title": "IVRYN Open Research",
   "upload_type": "dataset",
-  "description": "Five open, machine-readable research assets from the IVRYN portfolio, mirrored with citation metadata, checksums, methodology and explicit evidence limits.",
+  "description": "Eight open, machine-readable research assets from the IVRYN portfolio, mirrored with citation metadata, checksums, methodology and explicit evidence limits.",
   "creators": [
     {
       "name": "Laybats, Victor"
@@ -9,14 +9,17 @@
   ],
   "access_right": "open",
   "license": "cc-by-4.0",
-  "version": "2026.08.14",
+  "version": "2026.08.14.2",
   "keywords": [
     "open data",
     "web transparency",
     "automation readiness",
     "systematic execution controls",
     "calm technology",
-    "photo consent"
+    "photo consent",
+    "heartbeat monitoring",
+    "publication reliability",
+    "builder residency"
   ],
   "related_identifiers": [
     {
@@ -41,6 +44,21 @@
     },
     {
       "identifier": "https://sealedreveal.com/research/shared-photo-consent-checklist/",
+      "relation": "issupplementto",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://cascads.com/research/publication-proof/",
+      "relation": "issupplementto",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://datvero.com/heartbeat-detection-envelope.html",
+      "relation": "issupplementto",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://crucibleclub.com/research/builder-residency-due-diligence-checklist/",
       "relation": "issupplementto",
       "resource_type": "dataset"
     }

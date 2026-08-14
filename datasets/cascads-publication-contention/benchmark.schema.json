@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://cascads.com/research/publication-proof/benchmark.schema.json",
+  "title": "Cascads publication contention benchmark",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "study",
+    "generatedAt",
+    "license",
+    "environment",
+    "implementation",
+    "design",
+    "totals",
+    "result",
+    "limitations",
+    "rounds"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "study": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "license": {
+      "type": "string",
+      "format": "uri"
+    },
+    "durationMs": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "environment": {
+      "type": "object"
+    },
+    "implementation": {
+      "type": "object"
+    },
+    "design": {
+      "type": "object"
+    },
+    "totals": {
+      "type": "object"
+    },
+    "result": {
+      "type": "object"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rounds": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}

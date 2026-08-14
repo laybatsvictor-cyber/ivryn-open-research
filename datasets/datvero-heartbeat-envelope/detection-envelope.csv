@@ -1,0 +1,6 @@
+"expected_seconds","late_threshold_seconds","late_earliest_seconds","late_median_seconds","late_p95_seconds","late_latest_seconds","down_threshold_seconds","down_earliest_seconds","down_median_seconds","down_p95_seconds","down_latest_seconds","sampled_phase_offsets"
+"60","90","91","120","147","150","120","121","150","177","180","60"
+"300","450","451","480","507","510","600","601","630","657","660","60"
+"600","900","901","930","957","960","1200","1201","1230","1257","1260","60"
+"1800","2700","2701","2730","2757","2760","3600","3601","3630","3657","3660","60"
+"3600","5400","5401","5430","5457","5460","7200","7201","7230","7257","7260","60"

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "study": "Datvero heartbeat detection envelope",
+  "generatedAt": "2026-08-14T00:45:38.921Z",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "implementation": {
+    "repositoryCommit": "7becdd114727d8cf77d2ae452e2fca0ddc67707f",
+    "sourcePath": "backend/src/services/missing-detector.ts",
+    "sourceSha256": "d1ff53f470a80addc76384515fca0e17567588e44c550b903f7bc01ae1940321",
+    "sourceHasUncommittedChanges": false,
+    "checkIntervalSeconds": 60,
+    "lateMultiplier": 1.5,
+    "downMultiplier": 2
+  },
+  "method": {
+    "type": "implementation-derived deterministic phase simulation",
+    "phaseStepSeconds": 1,
+    "sampledPhaseOffsets": 60,
+    "comparison": "strictly greater than threshold",
+    "expectedIntervalsSeconds": [
+      60,
+      300,
+      600,
+      1800,
+      3600
+    ]
+  },
+  "interpretation": {
+    "late": "The first detector check strictly after 1.5 times the configured heartbeat interval.",
+    "down": "The first detector check strictly after 2 times the configured heartbeat interval."
+  },
+  "limitations": [
+    "This table is derived from a source-code snapshot and is not a production latency measurement or service-level agreement.",
+    "Whole-second scheduler phases are sampled; sub-second phase offsets are not enumerated.",
+    "Network transit, database latency, process stalls, alert rendering and delivery-channel latency are excluded.",
+    "The model starts from the last stored heartbeat timestamp and assumes the detector continues to run every configured check interval.",
+    "The results do not measure third-party workflow reliability or customer outcomes."
+  ],
+  "rows": [
+    {
+      "expectedSeconds": 60,
+      "lateThresholdSeconds": 90,
+      "lateEarliestSeconds": 91,
+      "lateMedianSeconds": 120,
+      "lateP95Seconds": 147,
+      "lateLatestSeconds": 150,
+      "downThresholdSeconds": 120,
+      "downEarliestSeconds": 121,
+      "downMedianSeconds": 150,
+      "downP95Seconds": 177,
+      "downLatestSeconds": 180,
+      "sampledPhaseOffsets": 60
+    },
+    {
+      "expectedSeconds": 300,
+      "lateThresholdSeconds": 450,
+      "lateEarliestSeconds": 451,
+      "lateMedianSeconds": 480,
+      "lateP95Seconds": 507,
+      "lateLatestSeconds": 510,
+      "downThresholdSeconds": 600,
+      "downEarliestSeconds": 601,
+      "downMedianSeconds": 630,
+      "downP95Seconds": 657,
+      "downLatestSeconds": 660,
+      "sampledPhaseOffsets": 60
+    },
+    {
+      "expectedSeconds": 600,
+      "lateThresholdSeconds": 900,
+      "lateEarliestSeconds": 901,
+      "lateMedianSeconds": 930,
+      "lateP95Seconds": 957,
+      "lateLatestSeconds": 960,
+      "downThresholdSeconds": 1200,
+      "downEarliestSeconds": 1201,
+      "downMedianSeconds": 1230,
+      "downP95Seconds": 1257,
+      "downLatestSeconds": 1260,
+      "sampledPhaseOffsets": 60
+    },
+    {
+      "expectedSeconds": 1800,
+      "lateThresholdSeconds": 2700,
+      "lateEarliestSeconds": 2701,
+      "lateMedianSeconds": 2730,
+      "lateP95Seconds": 2757,
+      "lateLatestSeconds": 2760,
+      "downThresholdSeconds": 3600,
+      "downEarliestSeconds": 3601,
+      "downMedianSeconds": 3630,
+      "downP95Seconds": 3657,
+      "downLatestSeconds": 3660,
+      "sampledPhaseOffsets": 60
+    },
+    {
+      "expectedSeconds": 3600,
+      "lateThresholdSeconds": 5400,
+      "lateEarliestSeconds": 5401,
+      "lateMedianSeconds": 5430,
+      "lateP95Seconds": 5457,
+      "lateLatestSeconds": 5460,
+      "downThresholdSeconds": 7200,
+      "downEarliestSeconds": 7201,
+      "downMedianSeconds": 7230,
+      "downP95Seconds": 7257,
+      "downLatestSeconds": 7260,
+      "sampledPhaseOffsets": 60
+    }
+  ]
+}

@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Builder Residency Due-Diligence Checklist v1.0",
+  "version": "1.0.0",
+  "datePublished": "2026-08-09",
+  "author": {
+    "name": "Victor Laybats",
+    "url": "https://victorlaybats.com/"
+  },
+  "publisher": {
+    "name": "IVRYN",
+    "url": "https://ivryn.com/"
+  },
+  "canonical": "https://crucibleclub.com/research/builder-residency-due-diligence-checklist/",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "description": "An open, machine-readable checklist for verifying dates, operator identity, accommodation, money, work expectations, safety and outcome claims before joining a builder residency.",
+  "methodology": "Victor Laybats authored the checklist from Crucible CLUB’s public participation methodology and the decision-critical gaps that any cohort-specific offer must resolve. Every item asks for evidence rather than awarding a score. The framework is independent of the status of any current Crucible cohort.",
+  "limitations": "This is a due-diligence aid, not legal, immigration, tax, medical, insurance or financial advice. It does not verify a venue, operator or cohort and it does not guarantee safety or project outcomes. Time-sensitive details must be checked directly with the organiser and relevant authorities before commitment.",
+  "sources": [
+    {
+      "name": "Crucible CLUB residency concept",
+      "url": "https://crucibleclub.com/"
+    },
+    {
+      "name": "Crucible CLUB identity and source hierarchy",
+      "url": "https://crucibleclub.com/about.html"
+    },
+    {
+      "name": "Crucible CLUB participation methodology",
+      "url": "https://crucibleclub.com/methodology.html"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "BRD-01",
+      "category": "Operator",
+      "criterion": "The legal or responsible operator is named.",
+      "rationale": "A participant needs to know who accepts money and carries obligations.",
+      "evidencePrompt": "Record the operator name, registration or legal status and service address."
+    },
+    {
+      "id": "BRD-02",
+      "category": "Operator",
+      "criterion": "A monitored contact and escalation route are provided.",
+      "rationale": "Questions and urgent issues need more than a social profile.",
+      "evidencePrompt": "Test the ordinary and urgent contact routes."
+    },
+    {
+      "id": "BRD-03",
+      "category": "Status",
+      "criterion": "Application status and decision dates are current.",
+      "rationale": "An open label can become misleading when dates have passed or a cohort has started.",
+      "evidencePrompt": "Capture the page, timestamp and stated decision timeline."
+    },
+    {
+      "id": "BRD-04",
+      "category": "Status",
+      "criterion": "Exact arrival, departure and program dates are stated.",
+      "rationale": "Travel and accommodation decisions depend on unambiguous dates and time zones.",
+      "evidencePrompt": "Record dates, check-in windows and time zone."
+    },
+    {
+      "id": "BRD-05",
+      "category": "Venue",
+      "criterion": "The city and venue status are confirmed.",
+      "rationale": "A concept image or provisional city is not a confirmed accommodation booking.",
+      "evidencePrompt": "Request the address or a documented disclosure of when it will be supplied."
+    },
+    {
+      "id": "BRD-06",
+      "category": "Venue",
+      "criterion": "Room allocation, occupancy and accessibility are described.",
+      "rationale": "Shared-room assumptions materially affect fit, privacy and cost.",
+      "evidencePrompt": "Record bed type, room sharing, bathrooms, stairs and accessibility constraints."
+    },
+    {
+      "id": "BRD-07",
+      "category": "Venue",
+      "criterion": "Capacity and minimum viable cohort are disclosed.",
+      "rationale": "A residency can change or cancel if too few or too many people join.",
+      "evidencePrompt": "Record maximum capacity, minimum cohort and the consequence if unmet."
+    },
+    {
+      "id": "BRD-08",
+      "category": "Money",
+      "criterion": "The total price, currency and taxes are stated.",
+      "rationale": "A headline price may omit taxes, deposits or mandatory extras.",
+      "evidencePrompt": "Request an itemized total in the payment currency."
+    },
+    {
+      "id": "BRD-09",
+      "category": "Money",
+      "criterion": "Included and excluded services are itemized.",
+      "rationale": "Accommodation, food, transport, workspace and activities should not be inferred.",
+      "evidencePrompt": "Create an inclusion and exclusion list."
+    },
+    {
+      "id": "BRD-10",
+      "category": "Money",
+      "criterion": "Payment recipient, schedule and method are verifiable.",
+      "rationale": "The payee should match the responsible operator or a disclosed agent.",
+      "evidencePrompt": "Record invoice issuer, payee, due dates and payment protection."
+    },
+    {
+      "id": "BRD-11",
+      "category": "Money",
+      "criterion": "Cancellation, refund and organiser-cancellation terms are supplied before payment.",
+      "rationale": "A participant needs to understand losses under each cancellation scenario.",
+      "evidencePrompt": "Save the terms version accepted at payment."
+    },
+    {
+      "id": "BRD-12",
+      "category": "Travel",
+      "criterion": "Visa and work-authorisation responsibility is explicit.",
+      "rationale": "A residency invitation does not determine immigration or work rights.",
+      "evidencePrompt": "Check current official authority guidance for the participant’s nationality and activity."
+    },
+    {
+      "id": "BRD-13",
+      "category": "Travel",
+      "criterion": "Insurance expectations and exclusions are explicit.",
+      "rationale": "Travel, health, equipment and cancellation risks may require different cover.",
+      "evidencePrompt": "Record required cover and who bears uninsured costs."
+    },
+    {
+      "id": "BRD-14",
+      "category": "Safety",
+      "criterion": "Emergency contacts and evacuation procedures exist.",
+      "rationale": "Shared accommodation in an unfamiliar place needs a practical incident plan.",
+      "evidencePrompt": "Request emergency numbers, exits, assembly point and hospital route."
+    },
+    {
+      "id": "BRD-15",
+      "category": "Safety",
+      "criterion": "Health, accessibility and accommodation needs have a private route.",
+      "rationale": "Participants need a way to discuss needs without public disclosure.",
+      "evidencePrompt": "Test the confidential request and response process."
+    },
+    {
+      "id": "BRD-16",
+      "category": "Community",
+      "criterion": "House rules cover guests, noise, substances and shared spaces.",
+      "rationale": "Common expectations reduce avoidable conflict in a live-work house.",
+      "evidencePrompt": "Review the cohort-specific house rules before acceptance."
+    },
+    {
+      "id": "BRD-17",
+      "category": "Community",
+      "criterion": "Conflict, harassment and removal procedures are defined.",
+      "rationale": "A community promise needs a safe route for complaints and proportionate action.",
+      "evidencePrompt": "Record reporter options, decision owner and consequences."
+    },
+    {
+      "id": "BRD-18",
+      "category": "Privacy",
+      "criterion": "Photography and public-content participation require separate agreement.",
+      "rationale": "Joining a residency is not consent to marketing or documentary content.",
+      "evidencePrompt": "Review release wording and the opt-out path."
+    },
+    {
+      "id": "BRD-19",
+      "category": "Privacy",
+      "criterion": "Confidential projects and intellectual property remain under participant control.",
+      "rationale": "Proximity should not force disclosure or transfer of project rights.",
+      "evidencePrompt": "Review confidentiality and intellectual-property clauses."
+    },
+    {
+      "id": "BRD-20",
+      "category": "Work",
+      "criterion": "The expected work rhythm and mandatory activities are stated.",
+      "rationale": "A participant cannot assess fit without knowing the balance of focus and group time.",
+      "evidencePrompt": "Record mandatory sessions, quiet hours and uninterrupted blocks."
+    },
+    {
+      "id": "BRD-21",
+      "category": "Work",
+      "criterion": "Each participant controls their project and milestone.",
+      "rationale": "Selection should not imply employment, investment or transfer of decision rights.",
+      "evidencePrompt": "Review the agreement and milestone process."
+    },
+    {
+      "id": "BRD-22",
+      "category": "Selection",
+      "criterion": "Selection criteria and conflicts of interest are described.",
+      "rationale": "Applicants should understand what is assessed and whether sponsors influence selection.",
+      "evidencePrompt": "Record criteria, reviewers and material relationships."
+    },
+    {
+      "id": "BRD-23",
+      "category": "Claims",
+      "criterion": "Testimonials identify the cohort and have publication permission.",
+      "rationale": "A quote without context or consent cannot establish a repeatable outcome.",
+      "evidencePrompt": "Verify the speaker, cohort, approved wording and date."
+    },
+    {
+      "id": "BRD-24",
+      "category": "Claims",
+      "criterion": "Launch, revenue, funding and partnership claims link to a verifiable record.",
+      "rationale": "Residency association should not be confused with causation or endorsement.",
+      "evidencePrompt": "Request the public artifact and participant-approved attribution."
+    },
+    {
+      "id": "BRD-25",
+      "category": "Claims",
+      "criterion": "Outcomes state starting point, time horizon and limitations.",
+      "rationale": "Without a baseline and timeframe, progress claims are easy to overread.",
+      "evidencePrompt": "Record milestone, observed deliverable, later result and external factors."
+    },
+    {
+      "id": "BRD-26",
+      "category": "Decision",
+      "criterion": "Unresolved questions are listed before payment or travel.",
+      "rationale": "A visible open-questions list prevents enthusiasm from becoming assumed fact.",
+      "evidencePrompt": "Publish or retain a dated decision log with owner and due date."
+    }
+  ]
+}

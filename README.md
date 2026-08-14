@@ -2,7 +2,7 @@
 
 Open, machine-readable research assets published by Victor Laybats and the IVRYN portfolio.
 
-This repository mirrors five versioned datasets that are also available from their official project sites. It exists to make the files easier to inspect, cite, reuse and archive. Every dataset separates authored material from third-party facts and states its evidence limits.
+This repository mirrors eight versioned datasets that are also available from their official project sites. It exists to make the files easier to inspect, cite, reuse and archive. Every dataset separates authored material from third-party facts and states its evidence limits.
 
 ## Datasets
 
@@ -13,6 +13,9 @@ This repository mirrors five versioned datasets that are also available from the
 | [Production readiness for n8n and AI workflows](datasets/victor-automation-readiness/) | CSV, JSON, field definitions, methodology | [victorlaybats.com](https://victorlaybats.com/research/automation-readiness/) |
 | [Reef calm habit design checklist](datasets/reef-calm-habit-design/) | CSV, JSON, citation metadata | [reeftogether.com](https://reeftogether.com/research/calm-habit-design-checklist/) |
 | [Sealed shared photo consent checklist](datasets/sealed-shared-photo-consent/) | CSV, JSON, citation metadata | [sealedreveal.com](https://sealedreveal.com/research/shared-photo-consent-checklist/) |
+| [Cascads publication contention benchmark](datasets/cascads-publication-contention/) | CSV, JSON, schema, reproduction note | [cascads.com](https://cascads.com/research/publication-proof/) |
+| [Datvero heartbeat detection envelope](datasets/datvero-heartbeat-envelope/) | CSV, JSON, schema, reproduction note | [datvero.com](https://datvero.com/heartbeat-detection-envelope.html) |
+| [Crucible CLUB residency due-diligence checklist](datasets/crucible-residency-due-diligence/) | CSV, JSON, citation metadata | [crucibleclub.com](https://crucibleclub.com/research/builder-residency-due-diligence-checklist/) |
 
 ## Evidence boundaries
 
@@ -21,6 +24,9 @@ This repository mirrors five versioned datasets that are also available from the
 - The portfolio transparency dataset is a dated public-web snapshot. Project status can change after its observation date.
 - The IMRYN material is a control and evidence register, not investment advice or proof that a live trading system meets every control.
 - The Reef and Sealed checklists describe product-design questions. They do not establish behavioral or safety outcomes.
+- The Cascads benchmark is a controlled single-host study with a local provider stub. It does not prove production or social-platform delivery.
+- The Datvero timing table is implementation-derived and excludes network, database and notification latency. It is not a service-level agreement.
+- The Crucible CLUB checklist records questions to verify. It does not verify a residency, venue, operator or cohort.
 
 ## Verification and citation
 

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://datvero.com/research/heartbeat-detection-envelope/dataset.schema.json",
+  "title": "Datvero heartbeat detection envelope dataset",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "study",
+    "generatedAt",
+    "license",
+    "implementation",
+    "method",
+    "limitations",
+    "rows"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "study": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "license": {
+      "type": "string",
+      "format": "uri"
+    },
+    "implementation": {
+      "type": "object"
+    },
+    "method": {
+      "type": "object"
+    },
+    "interpretation": {
+      "type": "object"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  }
+}
