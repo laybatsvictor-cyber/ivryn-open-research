@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "fields": [
+    {
+      "name": "id",
+      "description": "Stable check identifier"
+    },
+    {
+      "name": "category",
+      "description": "Review category"
+    },
+    {
+      "name": "check",
+      "description": "Readiness check"
+    },
+    {
+      "name": "evidence",
+      "description": "Example review evidence"
+    },
+    {
+      "name": "failureTest",
+      "description": "Failure scenario to test or prevent"
+    },
+    {
+      "name": "applicability",
+      "description": "all, ai or n8n"
+    },
+    {
+      "name": "priority",
+      "description": "Suggested review priority"
+    }
+  ]
+}

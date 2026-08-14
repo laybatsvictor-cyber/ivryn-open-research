@@ -1,0 +1,23 @@
+id,category,criterion,rationale,evidence_prompt
+SPC-01,Before the event,The host states the purpose of the photo activity.,People can make a better choice when the intended ritual and audience are explicit.,Record the invitation or opening explanation.
+SPC-02,Before the event,Participation is optional and refusal has no penalty.,Group pressure can undermine a nominal choice.,Document the non-participation path and host wording.
+SPC-03,Before the event,The group knows which device will capture and store photos.,A shared phone concentrates custody and access in one place.,Identify the device owner and who can unlock it.
+SPC-04,Before the event,The reveal time and audience are stated in advance.,Delayed capture should not hide when or with whom images will be viewed.,Record the timer and planned audience.
+SPC-05,Before the event,Rules for minors and guardians are explicit.,"Age and safeguarding requirements need a separate decision, not an assumption.",Record the age rule and guardian process.
+SPC-06,Capture,The device gives a clear indication when a photo is taken.,A blind preview should not become covert capture.,"Observe shutter feedback, screen state and sound behavior."
+SPC-07,Capture,A person can decline a specific photo after joining the activity.,Joining once should not remove control over later moments.,Demonstrate how a participant signals no capture.
+SPC-08,Capture,Sensitive spaces and situations are excluded.,"Bathrooms, changing areas, distress and incapacity require firm boundaries.",Inspect host rules and in-product safety guidance.
+SPC-09,Capture,The product does not imply that hidden preview prevents misuse.,"A concealed preview cannot stop another camera, coercion or later screenshots.",Review claims about privacy and secrecy.
+SPC-10,Reveal,The group renews consent before the shared reveal.,Circumstances may change between capture and viewing.,Record the prompt or host check immediately before reveal.
+SPC-11,Reveal,The reveal can be paused or stopped.,A participant needs an immediate control if an image causes concern.,"Demonstrate pause, exit and device-lock behavior."
+SPC-12,Reveal,An unwanted image has a deletion path.,Delayed surprise should not override removal after viewing.,Test deletion before any save or export.
+SPC-13,Reveal,Screenshot and screen-recording limits are disclosed.,Software may not be able to detect or prevent secondary capture.,Check the notice and test operating-system capture.
+SPC-14,Export,Saving a photo is a separate action from revealing it.,Viewing within an app should not silently create another library copy.,Compare app storage before and after reveal and save.
+SPC-15,Export,Save and share actions state their destination.,Copies can move beyond the original group and retention rules.,"Record the permission prompt, destination and share sheet."
+SPC-16,Export,Participants agree before public posting or redistribution.,Consent to capture is not automatically consent to publication.,Document the approval process for each external audience.
+SPC-17,Storage,"Local, cloud and backup storage are distinguished.",A claim of local storage can coexist with device-level backup or export.,"Map app storage, system backup and any service upload."
+SPC-18,Storage,Retention and capsule deletion are explained.,"Users need to know whether opening, saving or uninstalling changes the original.","Test opening, manual deletion and uninstall behavior."
+SPC-19,Storage,Permissions are limited to the selected function.,"Camera, microphone and photo-library access have different consequences.","Record each permission, timing and fallback when denied."
+SPC-20,Security,The device lock and account boundary are part of the threat model.,Local content remains exposed if the shared device itself is accessible.,"Document screen-lock, app-lock and guest-access behavior."
+SPC-21,Safety,There is a visible reporting and urgent-removal route.,"People need a path for harmful, unlawful or child-safety content.",Verify the public contact and response instructions.
+SPC-22,Evidence,Privacy and enjoyment claims are bounded and testable.,"A product feature does not prove safety, consent quality or a better social outcome.",Classify each claim and record the evidence and limitations.

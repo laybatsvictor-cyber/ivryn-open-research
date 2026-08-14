@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "fields": [
+    {
+      "name": "id"
+    },
+    {
+      "name": "name"
+    },
+    {
+      "name": "origin"
+    },
+    {
+      "name": "homepageStatus"
+    },
+    {
+      "name": "homepageFinalUrl"
+    },
+    {
+      "name": "homepageBytes"
+    },
+    {
+      "name": "canonical"
+    },
+    {
+      "name": "schemaTypes"
+    },
+    {
+      "name": "hreflangs"
+    },
+    {
+      "name": "robotsStatus"
+    },
+    {
+      "name": "oaiSearchBot"
+    },
+    {
+      "name": "gptBot"
+    },
+    {
+      "name": "claudeBot"
+    },
+    {
+      "name": "rootSitemapStatus"
+    },
+    {
+      "name": "rootSitemapUrls"
+    },
+    {
+      "name": "blogSitemapStatus"
+    },
+    {
+      "name": "blogSitemapUrls"
+    },
+    {
+      "name": "declaredUrls"
+    },
+    {
+      "name": "llmsStatus"
+    },
+    {
+      "name": "llmsBytes"
+    },
+    {
+      "name": "firstPartyRumDeclared"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+id,category,criterion,rationale,evidence_prompt
+CHD-01,Goal definition,The user chooses the action being tracked.,"Agency starts with a goal selected by the person, not inferred by the product.",Show where a user creates or selects the action.
+CHD-02,Goal definition,The action can be described in observable terms.,Observable actions are easier to review than vague promises about identity or health.,"Record the goal label, schedule and completion rule."
+CHD-03,Goal definition,"A goal can be edited, paused or removed.",Changing circumstances should not trap a person in an obsolete commitment.,"Demonstrate the edit, pause and deletion controls."
+CHD-04,Feedback,The interface distinguishes user input from calculated progress.,People should know which facts they entered and which values the product derived.,"Label a completion, a calculated count and any inferred status."
+CHD-05,Feedback,Decorative rewards are identifiable as product mechanics.,Animation and collectibles can motivate without being presented as scientific evidence.,Identify each decorative reward and the action that unlocks it.
+CHD-06,Feedback,Streak and completion calculations are explainable.,"A visible calculation lets users understand resets, time zones and missed entries.","Document the calculation, reset rule and time-zone behavior."
+CHD-07,Recovery,A missed day has a clear return path.,Recovery supports continued use without turning one lapse into a disproportionate penalty.,Demonstrate the first session after a missed day.
+CHD-08,Recovery,"Copy avoids shame, diagnosis and moral judgment.",A tracker should report product state without judging the person.,"Review empty, lapse, reminder and cancellation messages."
+CHD-09,Recovery,Historical progress remains understandable after a break.,People need an accurate record even when continuity changes.,Inspect how gaps and prior completions are displayed.
+CHD-10,Attention,Reminders are optional and controllable.,"Notifications should support a chosen routine, not manufacture urgency.","Show opt-in, schedule, mute and disable controls."
+CHD-11,Attention,The product works without manipulative countdowns or false scarcity.,Artificial urgency can displace the user’s goal with the product’s engagement target.,"Review purchase, streak and reward prompts for time pressure."
+CHD-12,Attention,Reduced-motion and interruption needs are considered.,Visual reward systems should remain usable when motion or repeated interruption is unwelcome.,Test system motion settings and notification-disabled use.
+CHD-13,Social,Social participation is optional.,Private self-tracking should not require public performance.,Complete the core workflow without adding contacts or posting.
+CHD-14,Social,Audience and visibility are clear before sharing.,"Users need to know who can see a goal, completion or media item.",Capture the audience selector and resulting view.
+CHD-15,Social,Rankings and comparison do not redefine personal progress.,Competitive mechanics can create pressure unrelated to the chosen action.,Document whether leaderboards exist and how they can be avoided.
+CHD-16,Data control,Collected data is described at the point it matters.,A plain-language explanation supports informed use and later review.,Map each core screen to the relevant privacy disclosure.
+CHD-17,Data control,Deletion and account exit are discoverable.,A user should be able to leave without an opaque support maze.,Test the public and in-product deletion path.
+CHD-18,Evidence,Feature claims are separated from outcome claims.,A working feature does not by itself prove behavior change or health benefit.,"Classify every material claim as feature, hypothesis or measured outcome."
+CHD-19,Evidence,"Any outcome report states context, measures and limitations.","Without those details, a testimonial or metric cannot support a general conclusion.","Check the app version, period, sample, measure, attrition and comparison."
+CHD-20,Evidence,Medical or psychological claims have appropriate evidence and review.,"Habit software should not imply treatment, diagnosis or guaranteed benefit without support.",List health-related wording and the evidence and review behind it.

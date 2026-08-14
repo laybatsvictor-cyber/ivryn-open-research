@@ -1,0 +1,284 @@
+{
+  "schemaVersion": 1,
+  "title": "Systematic execution control evidence register",
+  "publishedAt": "2026-08-09T14:30:00Z",
+  "publisher": "IMRYN Research",
+  "author": "Victor Laybats",
+  "controls": [
+    {
+      "id": "GOV-01",
+      "category": "Governance",
+      "control": "Named accountable owner",
+      "evidence": "An approved owner and deputy are recorded for each algorithm.",
+      "failureMode": "No accountable decision-maker during a change or incident.",
+      "phase": "Before deployment",
+      "priority": "critical"
+    },
+    {
+      "id": "GOV-02",
+      "category": "Governance",
+      "control": "Bounded operating scope",
+      "evidence": "Permitted accounts, instruments, venues, sessions and order types are versioned.",
+      "failureMode": "The algorithm acts outside its reviewed operating envelope.",
+      "phase": "Before deployment",
+      "priority": "critical"
+    },
+    {
+      "id": "GOV-03",
+      "category": "Governance",
+      "control": "Versioned algorithm inventory",
+      "evidence": "Each active algorithm has an identifier, purpose, owner, version and deployment state.",
+      "failureMode": "Operators cannot establish which logic is live.",
+      "phase": "Continuous",
+      "priority": "high"
+    },
+    {
+      "id": "GOV-04",
+      "category": "Governance",
+      "control": "Material-change policy",
+      "evidence": "The team defines, detects, reviews and approves material changes before release.",
+      "failureMode": "A significant change bypasses the intended review path.",
+      "phase": "Change",
+      "priority": "critical"
+    },
+    {
+      "id": "GOV-05",
+      "category": "Governance",
+      "control": "Independent challenge",
+      "evidence": "Risk, compliance or another independent reviewer can challenge release evidence.",
+      "failureMode": "Development assumptions remain untested by a separate function.",
+      "phase": "Change",
+      "priority": "high"
+    },
+    {
+      "id": "DATA-01",
+      "category": "Data integrity",
+      "control": "Authoritative source map",
+      "evidence": "Every decision input names its authoritative source, unit, timezone and fallback.",
+      "failureMode": "Conflicting sources silently drive different decisions.",
+      "phase": "Before deployment",
+      "priority": "high"
+    },
+    {
+      "id": "DATA-02",
+      "category": "Data integrity",
+      "control": "Freshness boundary",
+      "evidence": "A maximum acceptable age is defined and visible for each time-sensitive input.",
+      "failureMode": "Stale data is accepted as current.",
+      "phase": "Runtime",
+      "priority": "critical"
+    },
+    {
+      "id": "DATA-03",
+      "category": "Data integrity",
+      "control": "Schema and range validation",
+      "evidence": "Malformed, missing and implausible values fail explicit validation.",
+      "failureMode": "Bad input reaches decision logic without a controlled stop.",
+      "phase": "Runtime",
+      "priority": "critical"
+    },
+    {
+      "id": "DATA-04",
+      "category": "Data integrity",
+      "control": "Clock synchronization check",
+      "evidence": "Clock source, drift tolerance and alerting are documented and tested.",
+      "failureMode": "Event ordering and latency evidence become unreliable.",
+      "phase": "Runtime",
+      "priority": "high"
+    },
+    {
+      "id": "DATA-05",
+      "category": "Data integrity",
+      "control": "Replayable input record",
+      "evidence": "A bounded record can reconstruct the inputs used for a reviewed decision.",
+      "failureMode": "An incident cannot be reproduced without relying on memory.",
+      "phase": "After execution",
+      "priority": "high"
+    },
+    {
+      "id": "RISK-01",
+      "category": "Pre-trade risk",
+      "control": "Instrument and venue allowlist",
+      "evidence": "Orders are rejected unless the instrument and destination are explicitly permitted.",
+      "failureMode": "An unintended market or product receives an order.",
+      "phase": "Runtime",
+      "priority": "critical"
+    },
+    {
+      "id": "RISK-02",
+      "category": "Pre-trade risk",
+      "control": "Order size and notional limits",
+      "evidence": "Hard per-order quantity and notional ceilings are enforced before transmission.",
+      "failureMode": "A malformed or extreme order leaves the system.",
+      "phase": "Runtime",
+      "priority": "critical"
+    },
+    {
+      "id": "RISK-03",
+      "category": "Pre-trade risk",
+      "control": "Position and exposure limits",
+      "evidence": "Projected exposure is checked at the relevant account and aggregate levels.",
+      "failureMode": "Individually valid orders create an invalid aggregate exposure.",
+      "phase": "Runtime",
+      "priority": "critical"
+    },
+    {
+      "id": "RISK-04",
+      "category": "Pre-trade risk",
+      "control": "Price collars",
+      "evidence": "Order prices are checked against a documented reference and tolerance.",
+      "failureMode": "A stale or malformed price creates an extreme instruction.",
+      "phase": "Runtime",
+      "priority": "critical"
+    },
+    {
+      "id": "RISK-05",
+      "category": "Pre-trade risk",
+      "control": "Message-rate controls",
+      "evidence": "Order, cancel and replace rates have hard limits and tested behavior.",
+      "failureMode": "A loop overwhelms a venue, gateway or downstream control.",
+      "phase": "Runtime",
+      "priority": "critical"
+    },
+    {
+      "id": "EXEC-01",
+      "category": "Execution lifecycle",
+      "control": "Idempotent order intent",
+      "evidence": "A stable intent identifier prevents duplicate transmission after retry or reconnect.",
+      "failureMode": "The same decision creates multiple live orders.",
+      "phase": "Runtime",
+      "priority": "critical"
+    },
+    {
+      "id": "EXEC-02",
+      "category": "Execution lifecycle",
+      "control": "Decision-to-order trace",
+      "evidence": "Decision, risk result, transmitted instruction and venue response share a trace key.",
+      "failureMode": "An order cannot be tied back to its initiating decision.",
+      "phase": "Runtime",
+      "priority": "high"
+    },
+    {
+      "id": "EXEC-03",
+      "category": "Execution lifecycle",
+      "control": "Acknowledgement timeout",
+      "evidence": "A bounded wait state and escalation path exist for missing venue acknowledgement.",
+      "failureMode": "The system assumes an unknown order is absent or complete.",
+      "phase": "Runtime",
+      "priority": "critical"
+    },
+    {
+      "id": "EXEC-04",
+      "category": "Execution lifecycle",
+      "control": "Explicit state machine",
+      "evidence": "Accepted, rejected, resting, partial, filled, cancel-pending and cancelled states are distinct.",
+      "failureMode": "Ambiguous lifecycle state drives an unsafe next action.",
+      "phase": "Runtime",
+      "priority": "critical"
+    },
+    {
+      "id": "EXEC-05",
+      "category": "Execution lifecycle",
+      "control": "Venue isolation",
+      "evidence": "A degraded venue can be restricted without disabling unaffected routes by accident.",
+      "failureMode": "One venue failure propagates uncontrolled behavior across routes.",
+      "phase": "Runtime",
+      "priority": "high"
+    },
+    {
+      "id": "HUM-01",
+      "category": "Human control",
+      "control": "Rapid disable mechanism",
+      "evidence": "Authorized operators can stop new activity in a small, documented number of steps.",
+      "failureMode": "The algorithm continues while operators search for a control.",
+      "phase": "Runtime",
+      "priority": "critical"
+    },
+    {
+      "id": "HUM-02",
+      "category": "Human control",
+      "control": "Cancel and exposure procedure",
+      "evidence": "The runbook separates stopping new orders, cancelling open orders and managing exposure.",
+      "failureMode": "A stop command leaves unmanaged orders or exposure.",
+      "phase": "Incident",
+      "priority": "critical"
+    },
+    {
+      "id": "HUM-03",
+      "category": "Human control",
+      "control": "Role and entitlement separation",
+      "evidence": "Release, limit changes and emergency actions use least privilege and named roles.",
+      "failureMode": "One compromised or mistaken identity has unnecessary authority.",
+      "phase": "Continuous",
+      "priority": "critical"
+    },
+    {
+      "id": "HUM-04",
+      "category": "Human control",
+      "control": "Override audit trail",
+      "evidence": "Every override records actor, time, prior value, new value, reason and approval.",
+      "failureMode": "Temporary exceptions become invisible permanent behavior.",
+      "phase": "Runtime",
+      "priority": "high"
+    },
+    {
+      "id": "HUM-05",
+      "category": "Human control",
+      "control": "Escalation thresholds",
+      "evidence": "Conditions for review, automatic restriction and executive escalation are pre-defined.",
+      "failureMode": "Teams improvise authority during a fast-moving event.",
+      "phase": "Incident",
+      "priority": "high"
+    },
+    {
+      "id": "OPS-01",
+      "category": "Operations and evidence",
+      "control": "Health and dependency view",
+      "evidence": "Market data, gateways, venues, storage and control services have distinct health states.",
+      "failureMode": "A green aggregate status hides a critical dependency failure.",
+      "phase": "Runtime",
+      "priority": "high"
+    },
+    {
+      "id": "OPS-02",
+      "category": "Operations and evidence",
+      "control": "Actionable alert ownership",
+      "evidence": "Each material alert has a severity, owner, response time and tested destination.",
+      "failureMode": "An alert exists but no one is responsible for acting.",
+      "phase": "Runtime",
+      "priority": "high"
+    },
+    {
+      "id": "OPS-03",
+      "category": "Operations and evidence",
+      "control": "Order and position reconciliation",
+      "evidence": "Internal records are periodically compared with authoritative external state.",
+      "failureMode": "Silent divergence persists between local and venue or broker state.",
+      "phase": "Runtime",
+      "priority": "critical"
+    },
+    {
+      "id": "OPS-04",
+      "category": "Operations and evidence",
+      "control": "Incident timeline",
+      "evidence": "Significant events preserve configuration, inputs, decisions, controls, orders and interventions.",
+      "failureMode": "Post-incident review lacks a coherent sequence.",
+      "phase": "Incident",
+      "priority": "high"
+    },
+    {
+      "id": "OPS-05",
+      "category": "Operations and evidence",
+      "control": "Post-incident action closure",
+      "evidence": "Findings receive an owner, due date, verification test and closure evidence.",
+      "failureMode": "The same control weakness recurs without a verified fix.",
+      "phase": "After incident",
+      "priority": "high"
+    }
+  ],
+  "limitations": [
+    "Educational review template, not legal, regulatory or investment advice.",
+    "A listed control is not evidence that IMRYN or any other system implements it.",
+    "Applicability and calibration depend on jurisdiction, asset class, venue, firm and operating model."
+  ]
+}

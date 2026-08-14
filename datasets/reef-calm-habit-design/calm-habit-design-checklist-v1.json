@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Calm Habit Design Checklist v1.0",
+  "version": "1.0.0",
+  "datePublished": "2026-08-09",
+  "author": {
+    "name": "Victor Laybats",
+    "url": "https://victorlaybats.com/"
+  },
+  "publisher": {
+    "name": "IVRYN",
+    "url": "https://ivryn.com/"
+  },
+  "canonical": "https://reeftogether.com/research/calm-habit-design-checklist/",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "description": "An open, machine-readable checklist for reviewing whether a digital habit tool preserves user agency, makes feedback legible and separates product mechanics from evidence of real-world outcomes.",
+  "methodology": "Victor Laybats authored the checklist from Reef’s documented product boundaries and public methodology. Each item is written as a review question and an evidence request. The release does not score Reef or any competing product.",
+  "limitations": "This is a normative design checklist, not a clinical instrument, controlled experiment, certification or proof that a habit will form. A product can satisfy a criterion and still be ineffective or unsuitable in a particular context. Reviewers should record the app version, platform, date and evidence they actually observed.",
+  "sources": [
+    {
+      "name": "Reef product and FAQ",
+      "url": "https://reeftogether.com/"
+    },
+    {
+      "name": "Reef design and evidence methodology",
+      "url": "https://reeftogether.com/methodology.html"
+    },
+    {
+      "name": "Reef privacy policy",
+      "url": "https://reeftogether.com/privacy.html"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "CHD-01",
+      "category": "Goal definition",
+      "criterion": "The user chooses the action being tracked.",
+      "rationale": "Agency starts with a goal selected by the person, not inferred by the product.",
+      "evidencePrompt": "Show where a user creates or selects the action."
+    },
+    {
+      "id": "CHD-02",
+      "category": "Goal definition",
+      "criterion": "The action can be described in observable terms.",
+      "rationale": "Observable actions are easier to review than vague promises about identity or health.",
+      "evidencePrompt": "Record the goal label, schedule and completion rule."
+    },
+    {
+      "id": "CHD-03",
+      "category": "Goal definition",
+      "criterion": "A goal can be edited, paused or removed.",
+      "rationale": "Changing circumstances should not trap a person in an obsolete commitment.",
+      "evidencePrompt": "Demonstrate the edit, pause and deletion controls."
+    },
+    {
+      "id": "CHD-04",
+      "category": "Feedback",
+      "criterion": "The interface distinguishes user input from calculated progress.",
+      "rationale": "People should know which facts they entered and which values the product derived.",
+      "evidencePrompt": "Label a completion, a calculated count and any inferred status."
+    },
+    {
+      "id": "CHD-05",
+      "category": "Feedback",
+      "criterion": "Decorative rewards are identifiable as product mechanics.",
+      "rationale": "Animation and collectibles can motivate without being presented as scientific evidence.",
+      "evidencePrompt": "Identify each decorative reward and the action that unlocks it."
+    },
+    {
+      "id": "CHD-06",
+      "category": "Feedback",
+      "criterion": "Streak and completion calculations are explainable.",
+      "rationale": "A visible calculation lets users understand resets, time zones and missed entries.",
+      "evidencePrompt": "Document the calculation, reset rule and time-zone behavior."
+    },
+    {
+      "id": "CHD-07",
+      "category": "Recovery",
+      "criterion": "A missed day has a clear return path.",
+      "rationale": "Recovery supports continued use without turning one lapse into a disproportionate penalty.",
+      "evidencePrompt": "Demonstrate the first session after a missed day."
+    },
+    {
+      "id": "CHD-08",
+      "category": "Recovery",
+      "criterion": "Copy avoids shame, diagnosis and moral judgment.",
+      "rationale": "A tracker should report product state without judging the person.",
+      "evidencePrompt": "Review empty, lapse, reminder and cancellation messages."
+    },
+    {
+      "id": "CHD-09",
+      "category": "Recovery",
+      "criterion": "Historical progress remains understandable after a break.",
+      "rationale": "People need an accurate record even when continuity changes.",
+      "evidencePrompt": "Inspect how gaps and prior completions are displayed."
+    },
+    {
+      "id": "CHD-10",
+      "category": "Attention",
+      "criterion": "Reminders are optional and controllable.",
+      "rationale": "Notifications should support a chosen routine, not manufacture urgency.",
+      "evidencePrompt": "Show opt-in, schedule, mute and disable controls."
+    },
+    {
+      "id": "CHD-11",
+      "category": "Attention",
+      "criterion": "The product works without manipulative countdowns or false scarcity.",
+      "rationale": "Artificial urgency can displace the user’s goal with the product’s engagement target.",
+      "evidencePrompt": "Review purchase, streak and reward prompts for time pressure."
+    },
+    {
+      "id": "CHD-12",
+      "category": "Attention",
+      "criterion": "Reduced-motion and interruption needs are considered.",
+      "rationale": "Visual reward systems should remain usable when motion or repeated interruption is unwelcome.",
+      "evidencePrompt": "Test system motion settings and notification-disabled use."
+    },
+    {
+      "id": "CHD-13",
+      "category": "Social",
+      "criterion": "Social participation is optional.",
+      "rationale": "Private self-tracking should not require public performance.",
+      "evidencePrompt": "Complete the core workflow without adding contacts or posting."
+    },
+    {
+      "id": "CHD-14",
+      "category": "Social",
+      "criterion": "Audience and visibility are clear before sharing.",
+      "rationale": "Users need to know who can see a goal, completion or media item.",
+      "evidencePrompt": "Capture the audience selector and resulting view."
+    },
+    {
+      "id": "CHD-15",
+      "category": "Social",
+      "criterion": "Rankings and comparison do not redefine personal progress.",
+      "rationale": "Competitive mechanics can create pressure unrelated to the chosen action.",
+      "evidencePrompt": "Document whether leaderboards exist and how they can be avoided."
+    },
+    {
+      "id": "CHD-16",
+      "category": "Data control",
+      "criterion": "Collected data is described at the point it matters.",
+      "rationale": "A plain-language explanation supports informed use and later review.",
+      "evidencePrompt": "Map each core screen to the relevant privacy disclosure."
+    },
+    {
+      "id": "CHD-17",
+      "category": "Data control",
+      "criterion": "Deletion and account exit are discoverable.",
+      "rationale": "A user should be able to leave without an opaque support maze.",
+      "evidencePrompt": "Test the public and in-product deletion path."
+    },
+    {
+      "id": "CHD-18",
+      "category": "Evidence",
+      "criterion": "Feature claims are separated from outcome claims.",
+      "rationale": "A working feature does not by itself prove behavior change or health benefit.",
+      "evidencePrompt": "Classify every material claim as feature, hypothesis or measured outcome."
+    },
+    {
+      "id": "CHD-19",
+      "category": "Evidence",
+      "criterion": "Any outcome report states context, measures and limitations.",
+      "rationale": "Without those details, a testimonial or metric cannot support a general conclusion.",
+      "evidencePrompt": "Check the app version, period, sample, measure, attrition and comparison."
+    },
+    {
+      "id": "CHD-20",
+      "category": "Evidence",
+      "criterion": "Medical or psychological claims have appropriate evidence and review.",
+      "rationale": "Habit software should not imply treatment, diagnosis or guaranteed benefit without support.",
+      "evidencePrompt": "List health-related wording and the evidence and review behind it."
+    }
+  ]
+}

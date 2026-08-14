@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use one of these datasets, cite this repository and the official dataset source."
+title: "IVRYN Open Research"
+type: dataset
+authors:
+  - family-names: Laybats
+    given-names: Victor
+version: 2026.08.09
+date-released: 2026-08-09
+repository-code: "https://github.com/laybatsvictor-cyber/ivryn-open-research"
+url: "https://github.com/laybatsvictor-cyber/ivryn-open-research"
+license: CC-BY-4.0
+keywords:
+  - open data
+  - web transparency
+  - automation readiness
+  - systematic execution controls
+  - calm technology
+  - photo consent
+abstract: "Five open, machine-readable research assets from the IVRYN portfolio, mirrored with citation metadata, checksums, methodology and explicit evidence limits."

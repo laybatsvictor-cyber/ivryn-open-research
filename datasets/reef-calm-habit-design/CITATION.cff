@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this checklist, cite it using the metadata below."
+title: "Calm Habit Design Checklist v1.0"
+type: dataset
+authors:
+  - family-names: Laybats
+    given-names: Victor
+version: 1.0.0
+date-released: 2026-08-09
+url: "https://reeftogether.com/research/calm-habit-design-checklist/"
+license: CC-BY-4.0
+abstract: "An open, machine-readable checklist for reviewing whether a digital habit tool preserves user agency, makes feedback legible and separates product mechanics from evidence of real-world outcomes."

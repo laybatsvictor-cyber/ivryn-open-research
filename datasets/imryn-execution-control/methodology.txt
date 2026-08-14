@@ -1,0 +1,14 @@
+Systematic execution control evidence register
+Published: 2026-08-09T14:30:00Z
+
+Purpose
+A reusable review template that connects each control objective to example evidence and a failure mode.
+
+Construction
+The author reviewed the cited FCA, FINRA, SEC and FCA Handbook materials, grouped recurring operational themes, removed jurisdiction-specific prescriptions from the checklist wording, and normalized the result into implementation-neutral questions. Each row was reviewed for a distinct objective, inspectable evidence and a bounded failure mode.
+
+Limits
+This is educational material, not legal, compliance or investment advice. It is not a line-by-line regulatory mapping and does not establish that IMRYN or another system implements a listed control. Applicability and calibration depend on jurisdiction, asset class, venue, firm and operating model.
+
+Versioning
+The dated directory is the permanent citation target. The current directory may be updated in a later release. Use SHA256SUMS.txt to verify files.

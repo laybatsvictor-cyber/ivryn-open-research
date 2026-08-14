@@ -1,0 +1,14 @@
+Production readiness matrix for n8n and AI workflows
+Published: 2026-08-09T14:30:00Z
+
+Purpose
+A reusable pre-production review aid for deterministic automations and AI-enabled workflows. Each row pairs inspectable evidence with a failure scenario.
+
+Construction
+The author synthesized recurring controls from the cited n8n, NIST and OWASP guidance with operational delivery practice. Checks were grouped into ownership, inputs, execution and recovery, AI behavior, security and privacy, and operations. Vendor-specific wording is limited to rows whose applicability is n8n.
+
+Limits
+This is not a security certification, guarantee, legal assessment or proof of business outcome. Not every row applies to every workflow. Teams should calibrate evidence, testing and approval to the impact and reversibility of the action.
+
+Versioning
+The dated directory is the permanent citation target. The current directory may be updated in a later release. Use SHA256SUMS.txt to verify files.

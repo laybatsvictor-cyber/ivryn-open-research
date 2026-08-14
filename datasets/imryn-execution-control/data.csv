@@ -1,0 +1,31 @@
+id,category,control,evidence,failureMode,phase,priority
+GOV-01,Governance,Named accountable owner,An approved owner and deputy are recorded for each algorithm.,No accountable decision-maker during a change or incident.,Before deployment,critical
+GOV-02,Governance,Bounded operating scope,"Permitted accounts, instruments, venues, sessions and order types are versioned.",The algorithm acts outside its reviewed operating envelope.,Before deployment,critical
+GOV-03,Governance,Versioned algorithm inventory,"Each active algorithm has an identifier, purpose, owner, version and deployment state.",Operators cannot establish which logic is live.,Continuous,high
+GOV-04,Governance,Material-change policy,"The team defines, detects, reviews and approves material changes before release.",A significant change bypasses the intended review path.,Change,critical
+GOV-05,Governance,Independent challenge,"Risk, compliance or another independent reviewer can challenge release evidence.",Development assumptions remain untested by a separate function.,Change,high
+DATA-01,Data integrity,Authoritative source map,"Every decision input names its authoritative source, unit, timezone and fallback.",Conflicting sources silently drive different decisions.,Before deployment,high
+DATA-02,Data integrity,Freshness boundary,A maximum acceptable age is defined and visible for each time-sensitive input.,Stale data is accepted as current.,Runtime,critical
+DATA-03,Data integrity,Schema and range validation,"Malformed, missing and implausible values fail explicit validation.",Bad input reaches decision logic without a controlled stop.,Runtime,critical
+DATA-04,Data integrity,Clock synchronization check,"Clock source, drift tolerance and alerting are documented and tested.",Event ordering and latency evidence become unreliable.,Runtime,high
+DATA-05,Data integrity,Replayable input record,A bounded record can reconstruct the inputs used for a reviewed decision.,An incident cannot be reproduced without relying on memory.,After execution,high
+RISK-01,Pre-trade risk,Instrument and venue allowlist,Orders are rejected unless the instrument and destination are explicitly permitted.,An unintended market or product receives an order.,Runtime,critical
+RISK-02,Pre-trade risk,Order size and notional limits,Hard per-order quantity and notional ceilings are enforced before transmission.,A malformed or extreme order leaves the system.,Runtime,critical
+RISK-03,Pre-trade risk,Position and exposure limits,Projected exposure is checked at the relevant account and aggregate levels.,Individually valid orders create an invalid aggregate exposure.,Runtime,critical
+RISK-04,Pre-trade risk,Price collars,Order prices are checked against a documented reference and tolerance.,A stale or malformed price creates an extreme instruction.,Runtime,critical
+RISK-05,Pre-trade risk,Message-rate controls,"Order, cancel and replace rates have hard limits and tested behavior.","A loop overwhelms a venue, gateway or downstream control.",Runtime,critical
+EXEC-01,Execution lifecycle,Idempotent order intent,A stable intent identifier prevents duplicate transmission after retry or reconnect.,The same decision creates multiple live orders.,Runtime,critical
+EXEC-02,Execution lifecycle,Decision-to-order trace,"Decision, risk result, transmitted instruction and venue response share a trace key.",An order cannot be tied back to its initiating decision.,Runtime,high
+EXEC-03,Execution lifecycle,Acknowledgement timeout,A bounded wait state and escalation path exist for missing venue acknowledgement.,The system assumes an unknown order is absent or complete.,Runtime,critical
+EXEC-04,Execution lifecycle,Explicit state machine,"Accepted, rejected, resting, partial, filled, cancel-pending and cancelled states are distinct.",Ambiguous lifecycle state drives an unsafe next action.,Runtime,critical
+EXEC-05,Execution lifecycle,Venue isolation,A degraded venue can be restricted without disabling unaffected routes by accident.,One venue failure propagates uncontrolled behavior across routes.,Runtime,high
+HUM-01,Human control,Rapid disable mechanism,"Authorized operators can stop new activity in a small, documented number of steps.",The algorithm continues while operators search for a control.,Runtime,critical
+HUM-02,Human control,Cancel and exposure procedure,"The runbook separates stopping new orders, cancelling open orders and managing exposure.",A stop command leaves unmanaged orders or exposure.,Incident,critical
+HUM-03,Human control,Role and entitlement separation,"Release, limit changes and emergency actions use least privilege and named roles.",One compromised or mistaken identity has unnecessary authority.,Continuous,critical
+HUM-04,Human control,Override audit trail,"Every override records actor, time, prior value, new value, reason and approval.",Temporary exceptions become invisible permanent behavior.,Runtime,high
+HUM-05,Human control,Escalation thresholds,"Conditions for review, automatic restriction and executive escalation are pre-defined.",Teams improvise authority during a fast-moving event.,Incident,high
+OPS-01,Operations and evidence,Health and dependency view,"Market data, gateways, venues, storage and control services have distinct health states.",A green aggregate status hides a critical dependency failure.,Runtime,high
+OPS-02,Operations and evidence,Actionable alert ownership,"Each material alert has a severity, owner, response time and tested destination.",An alert exists but no one is responsible for acting.,Runtime,high
+OPS-03,Operations and evidence,Order and position reconciliation,Internal records are periodically compared with authoritative external state.,Silent divergence persists between local and venue or broker state.,Runtime,critical
+OPS-04,Operations and evidence,Incident timeline,"Significant events preserve configuration, inputs, decisions, controls, orders and interventions.",Post-incident review lacks a coherent sequence.,Incident,high
+OPS-05,Operations and evidence,Post-incident action closure,"Findings receive an owner, due date, verification test and closure evidence.",The same control weakness recurs without a verified fix.,After incident,high

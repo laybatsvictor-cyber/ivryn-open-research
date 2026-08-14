@@ -1,0 +1,193 @@
+{
+  "schemaVersion": "1.0",
+  "title": "Shared Photo Consent Checklist v1.0",
+  "version": "1.0.0",
+  "datePublished": "2026-08-09",
+  "author": {
+    "name": "Victor Laybats",
+    "url": "https://victorlaybats.com/"
+  },
+  "publisher": {
+    "name": "IVRYN",
+    "url": "https://ivryn.com/"
+  },
+  "canonical": "https://sealedreveal.com/research/shared-photo-consent-checklist/",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "description": "An open, machine-readable checklist for consent, capture, reveal, storage and deletion in one-phone group photo experiences.",
+  "methodology": "Victor Laybats authored the checklist from Sealed’s documented one-phone workflow, safety boundaries and public data-handling disclosures. The criteria are product-independent questions with a concrete evidence request. The release does not certify Sealed or any other photo application.",
+  "limitations": "This is a practical review framework, not legal advice, a security audit or proof of consent in a particular event. Consent depends on context and can be withdrawn. Laws, age rules, venue policies, operating-system backups and third-party sharing can change the correct process.",
+  "sources": [
+    {
+      "name": "Sealed product and FAQ",
+      "url": "https://sealedreveal.com/"
+    },
+    {
+      "name": "Sealed safety, consent and evidence methodology",
+      "url": "https://sealedreveal.com/methodology"
+    },
+    {
+      "name": "Sealed privacy policy",
+      "url": "https://sealedreveal.com/privacy"
+    },
+    {
+      "name": "Sealed child-safety rules",
+      "url": "https://sealedreveal.com/child-safety"
+    }
+  ],
+  "criteria": [
+    {
+      "id": "SPC-01",
+      "category": "Before the event",
+      "criterion": "The host states the purpose of the photo activity.",
+      "rationale": "People can make a better choice when the intended ritual and audience are explicit.",
+      "evidencePrompt": "Record the invitation or opening explanation."
+    },
+    {
+      "id": "SPC-02",
+      "category": "Before the event",
+      "criterion": "Participation is optional and refusal has no penalty.",
+      "rationale": "Group pressure can undermine a nominal choice.",
+      "evidencePrompt": "Document the non-participation path and host wording."
+    },
+    {
+      "id": "SPC-03",
+      "category": "Before the event",
+      "criterion": "The group knows which device will capture and store photos.",
+      "rationale": "A shared phone concentrates custody and access in one place.",
+      "evidencePrompt": "Identify the device owner and who can unlock it."
+    },
+    {
+      "id": "SPC-04",
+      "category": "Before the event",
+      "criterion": "The reveal time and audience are stated in advance.",
+      "rationale": "Delayed capture should not hide when or with whom images will be viewed.",
+      "evidencePrompt": "Record the timer and planned audience."
+    },
+    {
+      "id": "SPC-05",
+      "category": "Before the event",
+      "criterion": "Rules for minors and guardians are explicit.",
+      "rationale": "Age and safeguarding requirements need a separate decision, not an assumption.",
+      "evidencePrompt": "Record the age rule and guardian process."
+    },
+    {
+      "id": "SPC-06",
+      "category": "Capture",
+      "criterion": "The device gives a clear indication when a photo is taken.",
+      "rationale": "A blind preview should not become covert capture.",
+      "evidencePrompt": "Observe shutter feedback, screen state and sound behavior."
+    },
+    {
+      "id": "SPC-07",
+      "category": "Capture",
+      "criterion": "A person can decline a specific photo after joining the activity.",
+      "rationale": "Joining once should not remove control over later moments.",
+      "evidencePrompt": "Demonstrate how a participant signals no capture."
+    },
+    {
+      "id": "SPC-08",
+      "category": "Capture",
+      "criterion": "Sensitive spaces and situations are excluded.",
+      "rationale": "Bathrooms, changing areas, distress and incapacity require firm boundaries.",
+      "evidencePrompt": "Inspect host rules and in-product safety guidance."
+    },
+    {
+      "id": "SPC-09",
+      "category": "Capture",
+      "criterion": "The product does not imply that hidden preview prevents misuse.",
+      "rationale": "A concealed preview cannot stop another camera, coercion or later screenshots.",
+      "evidencePrompt": "Review claims about privacy and secrecy."
+    },
+    {
+      "id": "SPC-10",
+      "category": "Reveal",
+      "criterion": "The group renews consent before the shared reveal.",
+      "rationale": "Circumstances may change between capture and viewing.",
+      "evidencePrompt": "Record the prompt or host check immediately before reveal."
+    },
+    {
+      "id": "SPC-11",
+      "category": "Reveal",
+      "criterion": "The reveal can be paused or stopped.",
+      "rationale": "A participant needs an immediate control if an image causes concern.",
+      "evidencePrompt": "Demonstrate pause, exit and device-lock behavior."
+    },
+    {
+      "id": "SPC-12",
+      "category": "Reveal",
+      "criterion": "An unwanted image has a deletion path.",
+      "rationale": "Delayed surprise should not override removal after viewing.",
+      "evidencePrompt": "Test deletion before any save or export."
+    },
+    {
+      "id": "SPC-13",
+      "category": "Reveal",
+      "criterion": "Screenshot and screen-recording limits are disclosed.",
+      "rationale": "Software may not be able to detect or prevent secondary capture.",
+      "evidencePrompt": "Check the notice and test operating-system capture."
+    },
+    {
+      "id": "SPC-14",
+      "category": "Export",
+      "criterion": "Saving a photo is a separate action from revealing it.",
+      "rationale": "Viewing within an app should not silently create another library copy.",
+      "evidencePrompt": "Compare app storage before and after reveal and save."
+    },
+    {
+      "id": "SPC-15",
+      "category": "Export",
+      "criterion": "Save and share actions state their destination.",
+      "rationale": "Copies can move beyond the original group and retention rules.",
+      "evidencePrompt": "Record the permission prompt, destination and share sheet."
+    },
+    {
+      "id": "SPC-16",
+      "category": "Export",
+      "criterion": "Participants agree before public posting or redistribution.",
+      "rationale": "Consent to capture is not automatically consent to publication.",
+      "evidencePrompt": "Document the approval process for each external audience."
+    },
+    {
+      "id": "SPC-17",
+      "category": "Storage",
+      "criterion": "Local, cloud and backup storage are distinguished.",
+      "rationale": "A claim of local storage can coexist with device-level backup or export.",
+      "evidencePrompt": "Map app storage, system backup and any service upload."
+    },
+    {
+      "id": "SPC-18",
+      "category": "Storage",
+      "criterion": "Retention and capsule deletion are explained.",
+      "rationale": "Users need to know whether opening, saving or uninstalling changes the original.",
+      "evidencePrompt": "Test opening, manual deletion and uninstall behavior."
+    },
+    {
+      "id": "SPC-19",
+      "category": "Storage",
+      "criterion": "Permissions are limited to the selected function.",
+      "rationale": "Camera, microphone and photo-library access have different consequences.",
+      "evidencePrompt": "Record each permission, timing and fallback when denied."
+    },
+    {
+      "id": "SPC-20",
+      "category": "Security",
+      "criterion": "The device lock and account boundary are part of the threat model.",
+      "rationale": "Local content remains exposed if the shared device itself is accessible.",
+      "evidencePrompt": "Document screen-lock, app-lock and guest-access behavior."
+    },
+    {
+      "id": "SPC-21",
+      "category": "Safety",
+      "criterion": "There is a visible reporting and urgent-removal route.",
+      "rationale": "People need a path for harmful, unlawful or child-safety content.",
+      "evidencePrompt": "Verify the public contact and response instructions."
+    },
+    {
+      "id": "SPC-22",
+      "category": "Evidence",
+      "criterion": "Privacy and enjoyment claims are bounded and testable.",
+      "rationale": "A product feature does not prove safety, consent quality or a better social outcome.",
+      "evidencePrompt": "Classify each claim and record the evidence and limitations."
+    }
+  ]
+}

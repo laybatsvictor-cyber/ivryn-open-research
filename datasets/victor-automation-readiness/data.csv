@@ -1,0 +1,33 @@
+id,category,check,evidence,failureTest,applicability,priority
+OWN-01,Ownership and scope,Named workflow owner,"Owner, deputy and business approver are recorded.",No one has authority to decide during failure.,all,critical
+OWN-02,Ownership and scope,Observable success condition,"A measurable output, acceptance rule and review window are written down.",A successful execution is mistaken for a useful outcome.,all,high
+OWN-03,Ownership and scope,Stop conditions,The workflow defines inputs and states that must block automation.,Automation continues through ambiguity or unsafe context.,all,critical
+OWN-04,Ownership and scope,Dependency inventory,"APIs, models, credentials, queues, databases and human steps are listed.",A hidden dependency fails without an owner or fallback.,all,high
+IN-01,Inputs and data,Authenticated trigger,Public triggers use appropriate authentication or a documented public-access decision.,An unauthorized caller starts a sensitive workflow.,all,critical
+IN-02,Inputs and data,Schema validation,"Required fields, types, sizes and allowed values are checked before processing.",Malformed input causes unsafe branching or downstream errors.,all,critical
+IN-03,Inputs and data,Untrusted-content boundary,"External text and files are treated as data, not instructions.",Injected content changes tool or model behavior.,ai,critical
+IN-04,Inputs and data,Data minimization,Only fields necessary for the workflow are collected and retained.,Sensitive data is exposed without operational need.,all,high
+IN-05,Inputs and data,Authoritative source rule,Conflicts between systems resolve to a named source of truth.,Different runs produce inconsistent decisions from conflicting data.,all,high
+FLOW-01,Execution and recovery,Idempotency key,Repeated triggers and retries cannot duplicate the external effect.,A timeout or replay creates duplicate records or messages.,all,critical
+FLOW-02,Execution and recovery,Bounded retry policy,"Only transient failures retry, with a cap, delay and terminal path.","A persistent failure loops, increases cost or repeats side effects.",all,critical
+FLOW-03,Execution and recovery,Explicit timeout,Every remote dependency has a timeout shorter than the workflow budget.,One call holds the workflow indefinitely.,all,high
+FLOW-04,Execution and recovery,Error workflow,Unhandled failures reach a tested error path with useful context.,The execution stops silently or alerts without diagnostic data.,n8n,critical
+FLOW-05,Execution and recovery,Partial-failure policy,"The design states when to stop, compensate, queue or continue.",Continue-on-error hides a missing critical step.,all,critical
+FLOW-06,Execution and recovery,Dead-letter path,"Terminal failures are retained for bounded, authorized replay.",Failed work is lost or retried blindly.,all,high
+FLOW-07,Execution and recovery,Manual recovery runbook,"A person can identify state, avoid duplicates and resume safely.",Recovery requires ad hoc database or workflow edits.,all,high
+AI-01,AI behavior,Representative evaluation set,"Typical, edge, ambiguous and refusal cases are versioned.",A prompt change ships without behavioral comparison.,ai,critical
+AI-02,AI behavior,Structured output validation,Model output is parsed against a strict schema before use.,Malformed or invented fields reach downstream actions.,ai,critical
+AI-03,AI behavior,Least-capability tools,The agent receives only the tools and parameters required for its task.,A manipulated or mistaken choice has excessive impact.,ai,critical
+AI-04,AI behavior,Human approval for material actions,"External, financial, sensitive or irreversible actions require proportionate approval.",A plausible but wrong output directly changes external state.,ai,critical
+AI-05,AI behavior,Model and prompt version,"Model, parameters, prompt and tool manifest are identifiable per execution.",A behavioral regression cannot be attributed or reproduced.,ai,high
+AI-06,AI behavior,Cost and loop ceiling,"Token, step, time and tool-call ceilings stop runaway execution.",An agent loop consumes unbounded budget or API capacity.,ai,critical
+SEC-01,Security and privacy,Least-privilege credentials,Each credential exposes only necessary operations and environments.,A node compromise grants broad account access.,all,critical
+SEC-02,Security and privacy,Secret hygiene,Secrets stay in credential storage or controlled environment configuration.,"Keys leak into workflow JSON, logs or error messages.",all,critical
+SEC-03,Security and privacy,Risky-node review,"Code, shell, file, database and community nodes receive explicit review.",A powerful node expands the attack surface unnoticed.,n8n,high
+SEC-04,Security and privacy,Log redaction,"Tokens, personal data and confidential payloads are removed or minimized in traces.",Debug evidence becomes a data leak.,all,critical
+SEC-05,Security and privacy,Retention and deletion rule,Execution data has a documented retention period and deletion process.,Sensitive payloads remain indefinitely.,all,high
+OPS-01,Operations,Deployment version and rollback,A release is identifiable and a prior safe version can be restored.,An incident cannot be contained without rebuilding from memory.,all,critical
+OPS-02,Operations,Health versus outcome metrics,"Availability, error rate, latency, cost and output quality are measured separately.",HTTP success hides wrong or low-quality output.,all,high
+OPS-03,Operations,Actionable alerts,"Alerts have severity, owner, destination, threshold and response expectation.",Noise masks a material failure.,all,high
+OPS-04,Operations,Synthetic failure test,"Timeout, bad input, rate limit and downstream outage paths are exercised.",The fallback exists only on the canvas and fails when needed.,all,critical
+OPS-05,Operations,Periodic access and audit review,"Credentials, webhooks, nodes, versions and inactive workflows are reviewed.",Old access and exposed triggers accumulate silently.,n8n,high

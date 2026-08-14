@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "title": "IVRYN nine-site public web transparency snapshot",
+  "generatedAt": "2026-08-09T14:23:43.246Z",
+  "observedAt": "2026-08-09T14:23:43.246Z",
+  "publisher": "IVRYN",
+  "author": "Victor Laybats",
+  "sampleDefinition": "All nine public sites operated in the IVRYN portfolio on 2026-08-09.",
+  "methodologyUrl": "https://ivryn.com/research/portfolio-web-transparency/methodology.txt",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "limitations": [
+    "Owner-operated portfolio, not a representative sample of the web.",
+    "HTTP observations can change after collection.",
+    "Crawler policy is evaluated for the root path only.",
+    "Presence of metadata or crawler access does not prove indexing, ranking, editorial coverage or AI citation."
+  ],
+  "summary": {
+    "sites": 9,
+    "homepageHttp200": 9,
+    "llmsHttp200": 9,
+    "oaiSearchBotRootAllowed": 9,
+    "declaredUrls": 312
+  },
+  "sites": [
+    {
+      "id": "ivryn",
+      "name": "IVRYN",
+      "origin": "https://ivryn.com",
+      "homepageStatus": 200,
+      "homepageFinalUrl": "https://ivryn.com/",
+      "homepageBytes": 70238,
+      "canonical": "https://ivryn.com/",
+      "schemaTypes": [
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "hreflangs": [
+        "en",
+        "es",
+        "fr",
+        "x-default"
+      ],
+      "robotsStatus": 200,
+      "oaiSearchBot": "allowed",
+      "gptBot": "allowed",
+      "claudeBot": "allowed",
+      "rootSitemapStatus": 200,
+      "rootSitemapUrls": 11,
+      "blogSitemapStatus": 200,
+      "blogSitemapUrls": 7,
+      "declaredUrls": 17,
+      "llmsStatus": 200,
+      "llmsBytes": 1595,
+      "firstPartyRumDeclared": true
+    },
+    {
+      "id": "imryn",
+      "name": "IMRYN",
+      "origin": "https://imryn.com",
+      "homepageStatus": 200,
+      "homepageFinalUrl": "https://imryn.com/",
+      "homepageBytes": 28147,
+      "canonical": "https://imryn.com",
+      "schemaTypes": [
+        "FAQPage",
+        "Organization",
+        "SoftwareApplication",
+        "WebSite"
+      ],
+      "hreflangs": [
+        "en",
+        "es",
+        "fr",
+        "x-default"
+      ],
+      "robotsStatus": 200,
+      "oaiSearchBot": "allowed",
+      "gptBot": "allowed",
+      "claudeBot": "allowed",
+      "rootSitemapStatus": 200,
+      "rootSitemapUrls": 34,
+      "blogSitemapStatus": 200,
+      "blogSitemapUrls": 8,
+      "declaredUrls": 41,
+      "llmsStatus": 200,
+      "llmsBytes": 721,
+      "firstPartyRumDeclared": true
+    },
+    {
+      "id": "datvero",
+      "name": "Datvero",
+      "origin": "https://datvero.com",
+      "homepageStatus": 200,
+      "homepageFinalUrl": "https://datvero.com/",
+      "homepageBytes": 77122,
+      "canonical": "https://datvero.com",
+      "schemaTypes": [
+        "Organization",
+        "SoftwareApplication",
+        "WebSite"
+      ],
+      "hreflangs": [
+        "en",
+        "fr",
+        "x-default"
+      ],
+      "robotsStatus": 200,
+      "oaiSearchBot": "allowed",
+      "gptBot": "allowed",
+      "claudeBot": "allowed",
+      "rootSitemapStatus": 200,
+      "rootSitemapUrls": 30,
+      "blogSitemapStatus": 200,
+      "blogSitemapUrls": 8,
+      "declaredUrls": 37,
+      "llmsStatus": 200,
+      "llmsBytes": 3387,
+      "firstPartyRumDeclared": true
+    },
+    {
+      "id": "cascads",
+      "name": "Cascads",
+      "origin": "https://cascads.com",
+      "homepageStatus": 200,
+      "homepageFinalUrl": "https://cascads.com/",
+      "homepageBytes": 60502,
+      "canonical": "https://cascads.com/",
+      "schemaTypes": [
+        "FAQPage",
+        "Organization",
+        "SoftwareApplication",
+        "WebSite"
+      ],
+      "hreflangs": [
+        "en",
+        "es",
+        "fr",
+        "x-default"
+      ],
+      "robotsStatus": 200,
+      "oaiSearchBot": "allowed",
+      "gptBot": "allowed",
+      "claudeBot": "allowed",
+      "rootSitemapStatus": 200,
+      "rootSitemapUrls": 25,
+      "blogSitemapStatus": 200,
+      "blogSitemapUrls": 10,
+      "declaredUrls": 34,
+      "llmsStatus": 200,
+      "llmsBytes": 1406,
+      "firstPartyRumDeclared": true
+    },
+    {
+      "id": "reef",
+      "name": "Reef",
+      "origin": "https://reeftogether.com",
+      "homepageStatus": 200,
+      "homepageFinalUrl": "https://reeftogether.com/",
+      "homepageBytes": 112204,
+      "canonical": "https://reeftogether.com/",
+      "schemaTypes": [
+        "FAQPage",
+        "MobileApplication",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "hreflangs": [
+        "en",
+        "es",
+        "fr",
+        "x-default"
+      ],
+      "robotsStatus": 200,
+      "oaiSearchBot": "allowed",
+      "gptBot": "allowed",
+      "claudeBot": "allowed",
+      "rootSitemapStatus": 200,
+      "rootSitemapUrls": 19,
+      "blogSitemapStatus": 200,
+      "blogSitemapUrls": 3,
+      "declaredUrls": 21,
+      "llmsStatus": 200,
+      "llmsBytes": 2450,
+      "firstPartyRumDeclared": true
+    },
+    {
+      "id": "flare",
+      "name": "Flare",
+      "origin": "https://flareflights.com",
+      "homepageStatus": 200,
+      "homepageFinalUrl": "https://flareflights.com/",
+      "homepageBytes": 87846,
+      "canonical": "https://flareflights.com/",
+      "schemaTypes": [
+        "FAQPage",
+        "MobileApplication",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "hreflangs": [
+        "en",
+        "es",
+        "fr",
+        "x-default"
+      ],
+      "robotsStatus": 200,
+      "oaiSearchBot": "allowed",
+      "gptBot": "allowed",
+      "claudeBot": "allowed",
+      "rootSitemapStatus": 200,
+      "rootSitemapUrls": 103,
+      "blogSitemapStatus": 200,
+      "blogSitemapUrls": 8,
+      "declaredUrls": 110,
+      "llmsStatus": 200,
+      "llmsBytes": 3083,
+      "firstPartyRumDeclared": true
+    },
+    {
+      "id": "sealed",
+      "name": "Sealed",
+      "origin": "https://sealedreveal.com",
+      "homepageStatus": 200,
+      "homepageFinalUrl": "https://sealedreveal.com/",
+      "homepageBytes": 32459,
+      "canonical": "https://sealedreveal.com/",
+      "schemaTypes": [
+        "FAQPage",
+        "MobileApplication",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "hreflangs": [
+        "en",
+        "fr",
+        "x-default"
+      ],
+      "robotsStatus": 200,
+      "oaiSearchBot": "allowed",
+      "gptBot": "allowed",
+      "claudeBot": "allowed",
+      "rootSitemapStatus": 200,
+      "rootSitemapUrls": 10,
+      "blogSitemapStatus": 200,
+      "blogSitemapUrls": 8,
+      "declaredUrls": 17,
+      "llmsStatus": 200,
+      "llmsBytes": 3179,
+      "firstPartyRumDeclared": true
+    },
+    {
+      "id": "crucible",
+      "name": "Crucible CLUB",
+      "origin": "https://crucibleclub.com",
+      "homepageStatus": 200,
+      "homepageFinalUrl": "https://crucibleclub.com/",
+      "homepageBytes": 31265,
+      "canonical": "https://crucibleclub.com/",
+      "schemaTypes": [
+        "Event",
+        "Organization",
+        "WebPage",
+        "WebSite"
+      ],
+      "hreflangs": [
+        "en",
+        "fr",
+        "x-default"
+      ],
+      "robotsStatus": 200,
+      "oaiSearchBot": "allowed",
+      "gptBot": "allowed",
+      "claudeBot": "allowed",
+      "rootSitemapStatus": 200,
+      "rootSitemapUrls": 7,
+      "blogSitemapStatus": 200,
+      "blogSitemapUrls": 8,
+      "declaredUrls": 14,
+      "llmsStatus": 200,
+      "llmsBytes": 2054,
+      "firstPartyRumDeclared": true
+    },
+    {
+      "id": "victor",
+      "name": "Victor Laybats",
+      "origin": "https://victorlaybats.com",
+      "homepageStatus": 200,
+      "homepageFinalUrl": "https://victorlaybats.com/",
+      "homepageBytes": 63198,
+      "canonical": "https://victorlaybats.com/",
+      "schemaTypes": [
+        "FAQPage",
+        "Person",
+        "ProfessionalService",
+        "WebPage"
+      ],
+      "hreflangs": [
+        "en",
+        "es",
+        "fr",
+        "x-default"
+      ],
+      "robotsStatus": 200,
+      "oaiSearchBot": "allowed",
+      "gptBot": "allowed",
+      "claudeBot": "allowed",
+      "rootSitemapStatus": 200,
+      "rootSitemapUrls": 15,
+      "blogSitemapStatus": 200,
+      "blogSitemapUrls": 7,
+      "declaredUrls": 21,
+      "llmsStatus": 200,
+      "llmsBytes": 1409,
+      "firstPartyRumDeclared": true
+    }
+  ]
+}

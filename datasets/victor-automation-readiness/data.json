@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "title": "Production readiness matrix for n8n and AI workflows",
+  "publishedAt": "2026-08-09T14:30:00Z",
+  "publisher": "Victor Laybats",
+  "author": "Victor Laybats",
+  "checks": [
+    {
+      "id": "OWN-01",
+      "category": "Ownership and scope",
+      "check": "Named workflow owner",
+      "evidence": "Owner, deputy and business approver are recorded.",
+      "failureTest": "No one has authority to decide during failure.",
+      "applicability": "all",
+      "priority": "critical"
+    },
+    {
+      "id": "OWN-02",
+      "category": "Ownership and scope",
+      "check": "Observable success condition",
+      "evidence": "A measurable output, acceptance rule and review window are written down.",
+      "failureTest": "A successful execution is mistaken for a useful outcome.",
+      "applicability": "all",
+      "priority": "high"
+    },
+    {
+      "id": "OWN-03",
+      "category": "Ownership and scope",
+      "check": "Stop conditions",
+      "evidence": "The workflow defines inputs and states that must block automation.",
+      "failureTest": "Automation continues through ambiguity or unsafe context.",
+      "applicability": "all",
+      "priority": "critical"
+    },
+    {
+      "id": "OWN-04",
+      "category": "Ownership and scope",
+      "check": "Dependency inventory",
+      "evidence": "APIs, models, credentials, queues, databases and human steps are listed.",
+      "failureTest": "A hidden dependency fails without an owner or fallback.",
+      "applicability": "all",
+      "priority": "high"
+    },
+    {
+      "id": "IN-01",
+      "category": "Inputs and data",
+      "check": "Authenticated trigger",
+      "evidence": "Public triggers use appropriate authentication or a documented public-access decision.",
+      "failureTest": "An unauthorized caller starts a sensitive workflow.",
+      "applicability": "all",
+      "priority": "critical"
+    },
+    {
+      "id": "IN-02",
+      "category": "Inputs and data",
+      "check": "Schema validation",
+      "evidence": "Required fields, types, sizes and allowed values are checked before processing.",
+      "failureTest": "Malformed input causes unsafe branching or downstream errors.",
+      "applicability": "all",
+      "priority": "critical"
+    },
+    {
+      "id": "IN-03",
+      "category": "Inputs and data",
+      "check": "Untrusted-content boundary",
+      "evidence": "External text and files are treated as data, not instructions.",
+      "failureTest": "Injected content changes tool or model behavior.",
+      "applicability": "ai",
+      "priority": "critical"
+    },
+    {
+      "id": "IN-04",
+      "category": "Inputs and data",
+      "check": "Data minimization",
+      "evidence": "Only fields necessary for the workflow are collected and retained.",
+      "failureTest": "Sensitive data is exposed without operational need.",
+      "applicability": "all",
+      "priority": "high"
+    },
+    {
+      "id": "IN-05",
+      "category": "Inputs and data",
+      "check": "Authoritative source rule",
+      "evidence": "Conflicts between systems resolve to a named source of truth.",
+      "failureTest": "Different runs produce inconsistent decisions from conflicting data.",
+      "applicability": "all",
+      "priority": "high"
+    },
+    {
+      "id": "FLOW-01",
+      "category": "Execution and recovery",
+      "check": "Idempotency key",
+      "evidence": "Repeated triggers and retries cannot duplicate the external effect.",
+      "failureTest": "A timeout or replay creates duplicate records or messages.",
+      "applicability": "all",
+      "priority": "critical"
+    },
+    {
+      "id": "FLOW-02",
+      "category": "Execution and recovery",
+      "check": "Bounded retry policy",
+      "evidence": "Only transient failures retry, with a cap, delay and terminal path.",
+      "failureTest": "A persistent failure loops, increases cost or repeats side effects.",
+      "applicability": "all",
+      "priority": "critical"
+    },
+    {
+      "id": "FLOW-03",
+      "category": "Execution and recovery",
+      "check": "Explicit timeout",
+      "evidence": "Every remote dependency has a timeout shorter than the workflow budget.",
+      "failureTest": "One call holds the workflow indefinitely.",
+      "applicability": "all",
+      "priority": "high"
+    },
+    {
+      "id": "FLOW-04",
+      "category": "Execution and recovery",
+      "check": "Error workflow",
+      "evidence": "Unhandled failures reach a tested error path with useful context.",
+      "failureTest": "The execution stops silently or alerts without diagnostic data.",
+      "applicability": "n8n",
+      "priority": "critical"
+    },
+    {
+      "id": "FLOW-05",
+      "category": "Execution and recovery",
+      "check": "Partial-failure policy",
+      "evidence": "The design states when to stop, compensate, queue or continue.",
+      "failureTest": "Continue-on-error hides a missing critical step.",
+      "applicability": "all",
+      "priority": "critical"
+    },
+    {
+      "id": "FLOW-06",
+      "category": "Execution and recovery",
+      "check": "Dead-letter path",
+      "evidence": "Terminal failures are retained for bounded, authorized replay.",
+      "failureTest": "Failed work is lost or retried blindly.",
+      "applicability": "all",
+      "priority": "high"
+    },
+    {
+      "id": "FLOW-07",
+      "category": "Execution and recovery",
+      "check": "Manual recovery runbook",
+      "evidence": "A person can identify state, avoid duplicates and resume safely.",
+      "failureTest": "Recovery requires ad hoc database or workflow edits.",
+      "applicability": "all",
+      "priority": "high"
+    },
+    {
+      "id": "AI-01",
+      "category": "AI behavior",
+      "check": "Representative evaluation set",
+      "evidence": "Typical, edge, ambiguous and refusal cases are versioned.",
+      "failureTest": "A prompt change ships without behavioral comparison.",
+      "applicability": "ai",
+      "priority": "critical"
+    },
+    {
+      "id": "AI-02",
+      "category": "AI behavior",
+      "check": "Structured output validation",
+      "evidence": "Model output is parsed against a strict schema before use.",
+      "failureTest": "Malformed or invented fields reach downstream actions.",
+      "applicability": "ai",
+      "priority": "critical"
+    },
+    {
+      "id": "AI-03",
+      "category": "AI behavior",
+      "check": "Least-capability tools",
+      "evidence": "The agent receives only the tools and parameters required for its task.",
+      "failureTest": "A manipulated or mistaken choice has excessive impact.",
+      "applicability": "ai",
+      "priority": "critical"
+    },
+    {
+      "id": "AI-04",
+      "category": "AI behavior",
+      "check": "Human approval for material actions",
+      "evidence": "External, financial, sensitive or irreversible actions require proportionate approval.",
+      "failureTest": "A plausible but wrong output directly changes external state.",
+      "applicability": "ai",
+      "priority": "critical"
+    },
+    {
+      "id": "AI-05",
+      "category": "AI behavior",
+      "check": "Model and prompt version",
+      "evidence": "Model, parameters, prompt and tool manifest are identifiable per execution.",
+      "failureTest": "A behavioral regression cannot be attributed or reproduced.",
+      "applicability": "ai",
+      "priority": "high"
+    },
+    {
+      "id": "AI-06",
+      "category": "AI behavior",
+      "check": "Cost and loop ceiling",
+      "evidence": "Token, step, time and tool-call ceilings stop runaway execution.",
+      "failureTest": "An agent loop consumes unbounded budget or API capacity.",
+      "applicability": "ai",
+      "priority": "critical"
+    },
+    {
+      "id": "SEC-01",
+      "category": "Security and privacy",
+      "check": "Least-privilege credentials",
+      "evidence": "Each credential exposes only necessary operations and environments.",
+      "failureTest": "A node compromise grants broad account access.",
+      "applicability": "all",
+      "priority": "critical"
+    },
+    {
+      "id": "SEC-02",
+      "category": "Security and privacy",
+      "check": "Secret hygiene",
+      "evidence": "Secrets stay in credential storage or controlled environment configuration.",
+      "failureTest": "Keys leak into workflow JSON, logs or error messages.",
+      "applicability": "all",
+      "priority": "critical"
+    },
+    {
+      "id": "SEC-03",
+      "category": "Security and privacy",
+      "check": "Risky-node review",
+      "evidence": "Code, shell, file, database and community nodes receive explicit review.",
+      "failureTest": "A powerful node expands the attack surface unnoticed.",
+      "applicability": "n8n",
+      "priority": "high"
+    },
+    {
+      "id": "SEC-04",
+      "category": "Security and privacy",
+      "check": "Log redaction",
+      "evidence": "Tokens, personal data and confidential payloads are removed or minimized in traces.",
+      "failureTest": "Debug evidence becomes a data leak.",
+      "applicability": "all",
+      "priority": "critical"
+    },
+    {
+      "id": "SEC-05",
+      "category": "Security and privacy",
+      "check": "Retention and deletion rule",
+      "evidence": "Execution data has a documented retention period and deletion process.",
+      "failureTest": "Sensitive payloads remain indefinitely.",
+      "applicability": "all",
+      "priority": "high"
+    },
+    {
+      "id": "OPS-01",
+      "category": "Operations",
+      "check": "Deployment version and rollback",
+      "evidence": "A release is identifiable and a prior safe version can be restored.",
+      "failureTest": "An incident cannot be contained without rebuilding from memory.",
+      "applicability": "all",
+      "priority": "critical"
+    },
+    {
+      "id": "OPS-02",
+      "category": "Operations",
+      "check": "Health versus outcome metrics",
+      "evidence": "Availability, error rate, latency, cost and output quality are measured separately.",
+      "failureTest": "HTTP success hides wrong or low-quality output.",
+      "applicability": "all",
+      "priority": "high"
+    },
+    {
+      "id": "OPS-03",
+      "category": "Operations",
+      "check": "Actionable alerts",
+      "evidence": "Alerts have severity, owner, destination, threshold and response expectation.",
+      "failureTest": "Noise masks a material failure.",
+      "applicability": "all",
+      "priority": "high"
+    },
+    {
+      "id": "OPS-04",
+      "category": "Operations",
+      "check": "Synthetic failure test",
+      "evidence": "Timeout, bad input, rate limit and downstream outage paths are exercised.",
+      "failureTest": "The fallback exists only on the canvas and fails when needed.",
+      "applicability": "all",
+      "priority": "critical"
+    },
+    {
+      "id": "OPS-05",
+      "category": "Operations",
+      "check": "Periodic access and audit review",
+      "evidence": "Credentials, webhooks, nodes, versions and inactive workflows are reviewed.",
+      "failureTest": "Old access and exposed triggers accumulate silently.",
+      "applicability": "n8n",
+      "priority": "high"
+    }
+  ],
+  "limitations": [
+    "Review aid, not a security certification or guarantee.",
+    "Not every check applies to every workflow.",
+    "Passing the matrix does not prove a business outcome, legal compliance or immunity from failure."
+  ]
+}

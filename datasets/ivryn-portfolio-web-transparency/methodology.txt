@@ -1,0 +1,14 @@
+IVRYN nine-site public web transparency snapshot
+Observed: 2026-08-09T14:23:43.246Z
+
+Scope
+All nine public sites operated in the IVRYN portfolio on 2026-08-09. This is a portfolio census, not a representative sample of the web.
+
+Collection
+For each origin, the collector requested the homepage, /robots.txt, /sitemap.xml, /blog/sitemap.xml and /llms.txt with a descriptive research user-agent. Redirects were followed. It counted unique XML <loc> values across the two sitemap endpoints, parsed JSON-LD @type values from valid blocks, listed homepage hreflang values, and evaluated root-path rules for OAI-SearchBot, GPTBot and ClaudeBot. Exact user-agent groups take precedence over wildcard groups. The longest matching root rule wins; Allow wins an equal-length tie.
+
+Boundaries
+The method does not execute JavaScript, crawl every declared page, evaluate content quality, measure field performance or query a search index. Results can change after collection. Presence or access does not prove indexing, ranking, backlinks, editorial endorsement or AI citation.
+
+Reproduction
+Request the five public endpoints above for every origin listed in data.json and apply the field definitions in fields.json. Compare the resulting data files with SHA256SUMS.txt.

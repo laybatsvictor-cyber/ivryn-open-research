@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "fields": [
+    {
+      "name": "id",
+      "description": "Stable control identifier"
+    },
+    {
+      "name": "category",
+      "description": "Review category"
+    },
+    {
+      "name": "control",
+      "description": "Control objective"
+    },
+    {
+      "name": "evidence",
+      "description": "Example review evidence"
+    },
+    {
+      "name": "failureMode",
+      "description": "Failure the check is intended to surface"
+    },
+    {
+      "name": "phase",
+      "description": "Lifecycle phase"
+    },
+    {
+      "name": "priority",
+      "description": "Suggested review priority"
+    }
+  ]
+}
