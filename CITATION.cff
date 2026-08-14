@@ -5,8 +5,8 @@ type: dataset
 authors:
   - family-names: Laybats
     given-names: Victor
-version: 2026.08.09
-date-released: 2026-08-09
+version: 2026.08.14
+date-released: 2026-08-14
 repository-code: "https://github.com/laybatsvictor-cyber/ivryn-open-research"
 url: "https://github.com/laybatsvictor-cyber/ivryn-open-research"
 license: CC-BY-4.0

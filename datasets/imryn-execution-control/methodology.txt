@@ -1,5 +1,5 @@
 Systematic execution control evidence register
-Published: 2026-08-09T14:30:00Z
+Published: 2026-08-14T14:30:00Z
 
 Purpose
 A reusable review template that connects each control objective to example evidence and a failure mode.

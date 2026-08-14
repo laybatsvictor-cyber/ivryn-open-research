@@ -1,5 +1,5 @@
 Production readiness matrix for n8n and AI workflows
-Published: 2026-08-09T14:30:00Z
+Published: 2026-08-14T14:30:00Z
 
 Purpose
 A reusable pre-production review aid for deterministic automations and AI-enabled workflows. Each row pairs inspectable evidence with a failure scenario.

@@ -1,5 +1,5 @@
 IVRYN nine-site public web transparency snapshot
-Observed: 2026-08-09T14:23:43.246Z
+Observed: 2026-08-14T00:22:08.473Z
 
 Scope
 All nine public sites operated in the IVRYN portfolio on 2026-08-09. This is a portfolio census, not a representative sample of the web.

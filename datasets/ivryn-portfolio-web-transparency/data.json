@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "title": "IVRYN nine-site public web transparency snapshot",
-  "generatedAt": "2026-08-09T14:23:43.246Z",
-  "observedAt": "2026-08-09T14:23:43.246Z",
+  "generatedAt": "2026-08-14T00:22:08.473Z",
+  "observedAt": "2026-08-14T00:22:08.473Z",
   "publisher": "IVRYN",
   "author": "Victor Laybats",
   "sampleDefinition": "All nine public sites operated in the IVRYN portfolio on 2026-08-09.",
@@ -19,7 +19,7 @@
     "homepageHttp200": 9,
     "llmsHttp200": 9,
     "oaiSearchBotRootAllowed": 9,
-    "declaredUrls": 312
+    "declaredUrls": 760
   },
   "sites": [
     {
@@ -28,7 +28,7 @@
       "origin": "https://ivryn.com",
       "homepageStatus": 200,
       "homepageFinalUrl": "https://ivryn.com/",
-      "homepageBytes": 70238,
+      "homepageBytes": 69880,
       "canonical": "https://ivryn.com/",
       "schemaTypes": [
         "Organization",
@@ -46,12 +46,12 @@
       "gptBot": "allowed",
       "claudeBot": "allowed",
       "rootSitemapStatus": 200,
-      "rootSitemapUrls": 11,
+      "rootSitemapUrls": 22,
       "blogSitemapStatus": 200,
-      "blogSitemapUrls": 7,
-      "declaredUrls": 17,
+      "blogSitemapUrls": 8,
+      "declaredUrls": 29,
       "llmsStatus": 200,
-      "llmsBytes": 1595,
+      "llmsBytes": 4414,
       "firstPartyRumDeclared": true
     },
     {
@@ -79,12 +79,12 @@
       "gptBot": "allowed",
       "claudeBot": "allowed",
       "rootSitemapStatus": 200,
-      "rootSitemapUrls": 34,
+      "rootSitemapUrls": 43,
       "blogSitemapStatus": 200,
-      "blogSitemapUrls": 8,
-      "declaredUrls": 41,
+      "blogSitemapUrls": 10,
+      "declaredUrls": 52,
       "llmsStatus": 200,
-      "llmsBytes": 721,
+      "llmsBytes": 3064,
       "firstPartyRumDeclared": true
     },
     {
@@ -93,7 +93,7 @@
       "origin": "https://datvero.com",
       "homepageStatus": 200,
       "homepageFinalUrl": "https://datvero.com/",
-      "homepageBytes": 77122,
+      "homepageBytes": 139483,
       "canonical": "https://datvero.com",
       "schemaTypes": [
         "Organization",
@@ -110,12 +110,12 @@
       "gptBot": "allowed",
       "claudeBot": "allowed",
       "rootSitemapStatus": 200,
-      "rootSitemapUrls": 30,
+      "rootSitemapUrls": 28,
       "blogSitemapStatus": 200,
-      "blogSitemapUrls": 8,
+      "blogSitemapUrls": 9,
       "declaredUrls": 37,
       "llmsStatus": 200,
-      "llmsBytes": 3387,
+      "llmsBytes": 4475,
       "firstPartyRumDeclared": true
     },
     {
@@ -124,12 +124,14 @@
       "origin": "https://cascads.com",
       "homepageStatus": 200,
       "homepageFinalUrl": "https://cascads.com/",
-      "homepageBytes": 60502,
+      "homepageBytes": 62201,
       "canonical": "https://cascads.com/",
       "schemaTypes": [
         "FAQPage",
         "Organization",
         "SoftwareApplication",
+        "VideoObject",
+        "WebPage",
         "WebSite"
       ],
       "hreflangs": [
@@ -143,12 +145,12 @@
       "gptBot": "allowed",
       "claudeBot": "allowed",
       "rootSitemapStatus": 200,
-      "rootSitemapUrls": 25,
+      "rootSitemapUrls": 68,
       "blogSitemapStatus": 200,
       "blogSitemapUrls": 10,
-      "declaredUrls": 34,
+      "declaredUrls": 77,
       "llmsStatus": 200,
-      "llmsBytes": 1406,
+      "llmsBytes": 6470,
       "firstPartyRumDeclared": true
     },
     {
@@ -157,7 +159,7 @@
       "origin": "https://reeftogether.com",
       "homepageStatus": 200,
       "homepageFinalUrl": "https://reeftogether.com/",
-      "homepageBytes": 112204,
+      "homepageBytes": 112309,
       "canonical": "https://reeftogether.com/",
       "schemaTypes": [
         "FAQPage",
@@ -177,12 +179,12 @@
       "gptBot": "allowed",
       "claudeBot": "allowed",
       "rootSitemapStatus": 200,
-      "rootSitemapUrls": 19,
+      "rootSitemapUrls": 31,
       "blogSitemapStatus": 200,
       "blogSitemapUrls": 3,
-      "declaredUrls": 21,
+      "declaredUrls": 33,
       "llmsStatus": 200,
-      "llmsBytes": 2450,
+      "llmsBytes": 4516,
       "firstPartyRumDeclared": true
     },
     {
@@ -191,7 +193,7 @@
       "origin": "https://flareflights.com",
       "homepageStatus": 200,
       "homepageFinalUrl": "https://flareflights.com/",
-      "homepageBytes": 87846,
+      "homepageBytes": 87478,
       "canonical": "https://flareflights.com/",
       "schemaTypes": [
         "FAQPage",
@@ -211,12 +213,12 @@
       "gptBot": "allowed",
       "claudeBot": "allowed",
       "rootSitemapStatus": 200,
-      "rootSitemapUrls": 103,
+      "rootSitemapUrls": 450,
       "blogSitemapStatus": 200,
-      "blogSitemapUrls": 8,
-      "declaredUrls": 110,
+      "blogSitemapUrls": 9,
+      "declaredUrls": 458,
       "llmsStatus": 200,
-      "llmsBytes": 3083,
+      "llmsBytes": 4226,
       "firstPartyRumDeclared": true
     },
     {
@@ -225,7 +227,7 @@
       "origin": "https://sealedreveal.com",
       "homepageStatus": 200,
       "homepageFinalUrl": "https://sealedreveal.com/",
-      "homepageBytes": 32459,
+      "homepageBytes": 32613,
       "canonical": "https://sealedreveal.com/",
       "schemaTypes": [
         "FAQPage",
@@ -244,12 +246,12 @@
       "gptBot": "allowed",
       "claudeBot": "allowed",
       "rootSitemapStatus": 200,
-      "rootSitemapUrls": 10,
+      "rootSitemapUrls": 19,
       "blogSitemapStatus": 200,
       "blogSitemapUrls": 8,
-      "declaredUrls": 17,
+      "declaredUrls": 26,
       "llmsStatus": 200,
-      "llmsBytes": 3179,
+      "llmsBytes": 4859,
       "firstPartyRumDeclared": true
     },
     {
@@ -258,10 +260,9 @@
       "origin": "https://crucibleclub.com",
       "homepageStatus": 200,
       "homepageFinalUrl": "https://crucibleclub.com/",
-      "homepageBytes": 31265,
+      "homepageBytes": 29938,
       "canonical": "https://crucibleclub.com/",
       "schemaTypes": [
-        "Event",
         "Organization",
         "WebPage",
         "WebSite"
@@ -278,10 +279,10 @@
       "rootSitemapStatus": 200,
       "rootSitemapUrls": 7,
       "blogSitemapStatus": 200,
-      "blogSitemapUrls": 8,
-      "declaredUrls": 14,
+      "blogSitemapUrls": 7,
+      "declaredUrls": 13,
       "llmsStatus": 200,
-      "llmsBytes": 2054,
+      "llmsBytes": 1992,
       "firstPartyRumDeclared": true
     },
     {
@@ -290,7 +291,7 @@
       "origin": "https://victorlaybats.com",
       "homepageStatus": 200,
       "homepageFinalUrl": "https://victorlaybats.com/",
-      "homepageBytes": 63198,
+      "homepageBytes": 63642,
       "canonical": "https://victorlaybats.com/",
       "schemaTypes": [
         "FAQPage",
@@ -309,12 +310,12 @@
       "gptBot": "allowed",
       "claudeBot": "allowed",
       "rootSitemapStatus": 200,
-      "rootSitemapUrls": 15,
+      "rootSitemapUrls": 29,
       "blogSitemapStatus": 200,
       "blogSitemapUrls": 7,
-      "declaredUrls": 21,
+      "declaredUrls": 35,
       "llmsStatus": 200,
-      "llmsBytes": 1409,
+      "llmsBytes": 4933,
       "firstPartyRumDeclared": true
     }
   ]
