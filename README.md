@@ -2,7 +2,7 @@
 
 Open, machine-readable research assets published by Victor Laybats and the IVRYN portfolio.
 
-This repository mirrors eight versioned datasets that are also available from their official project sites. It exists to make the files easier to inspect, cite, reuse and archive. Every dataset separates authored material from third-party facts and states its evidence limits.
+This repository mirrors nine versioned datasets that are also available from their official project sites. It exists to make the files easier to inspect, cite, reuse and archive. Every dataset separates authored material from third-party facts and states its evidence limits.
 
 ## Datasets
 
@@ -16,6 +16,7 @@ This repository mirrors eight versioned datasets that are also available from th
 | [Cascads publication contention benchmark](datasets/cascads-publication-contention/) | CSV, JSON, schema, reproduction note | [cascads.com](https://cascads.com/research/publication-proof/) |
 | [Datvero heartbeat detection envelope](datasets/datvero-heartbeat-envelope/) | CSV, JSON, schema, reproduction note | [datvero.com](https://datvero.com/heartbeat-detection-envelope.html) |
 | [Crucible CLUB residency due-diligence checklist](datasets/crucible-residency-due-diligence/) | CSV, JSON, citation metadata | [crucibleclub.com](https://crucibleclub.com/research/builder-residency-due-diligence-checklist/) |
+| [WikiCards trivia facts from Wikidata](datasets/wikicards-wikidata-trivia-facts/) | JSON, CSV, method, citation metadata | [playwikicards.com](https://playwikicards.com/how-the-quizzes-are-made/) |
 
 ## Evidence boundaries
 
@@ -27,6 +28,7 @@ This repository mirrors eight versioned datasets that are also available from th
 - The Cascads benchmark is a controlled single-host study with a local provider stub. It does not prove production or social-platform delivery.
 - The Datvero timing table is implementation-derived and excludes network, database and notification latency. It is not a service-level agreement.
 - The Crucible CLUB checklist records questions to verify. It does not verify a residency, venue, operator or cohort.
+- The WikiCards trivia facts are Wikidata statements read on 23 October 2026, cleaned for quiz use, not independently verified facts.
 
 ## Verification and citation
 

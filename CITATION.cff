@@ -5,12 +5,14 @@ type: dataset
 authors:
   - family-names: Laybats
     given-names: Victor
-version: 2026.08.14.2
-date-released: 2026-08-14
+version: 2026.10.23
+date-released: 2026-10-23
 repository-code: "https://github.com/laybatsvictor-cyber/ivryn-open-research"
 url: "https://github.com/laybatsvictor-cyber/ivryn-open-research"
 license: CC-BY-4.0
 keywords:
+  - Wikidata
+  - trivia
   - open data
   - web transparency
   - automation readiness

@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this dataset, cite it and the official page."
+title: "WikiCards trivia facts from Wikidata"
+type: dataset
+authors:
+  - family-names: Laybats
+    given-names: Victor
+version: 2026.10.23
+date-released: 2026-10-23
+url: "https://playwikicards.com/how-the-quizzes-are-made/"
+repository-code: "https://github.com/laybatsvictor-cyber/ivryn-open-research"
+license: CC0-1.0
+keywords:
+  - Wikidata
+  - trivia
+  - quiz
+  - geography
+  - open data
